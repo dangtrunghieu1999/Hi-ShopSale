@@ -1,0 +1,6 @@
+framework module Pods_HiShopSale {
+  umbrella header "Pods-HiShopSale-umbrella.h"
+
+  export *
+  module * { export * }
+}
