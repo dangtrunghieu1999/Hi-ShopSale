@@ -13,6 +13,6 @@ class ImageManager {
     static let icon_shop                            = UIImage(named: "icon_shop")
     static let empty                                = UIImage(named: "empty")
     static let back                                 = UIImage(named: "back")
-    
-
+    static let icon_logo                            = UIImage(named: "icon_logo")
+    static let icon_logo2                           = UIImage(named: "icon_logo2")
 }

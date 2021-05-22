@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,16 +14,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let attributed = [NSAttributedString.Key.foregroundColor: UIColor.white,
-                          NSAttributedString.Key.font: UIFont.systemFont(ofSize: FontSize.body.rawValue)]
-        UINavigationBar.appearance().titleTextAttributes = attributed
-        UINavigationBar.appearance().barTintColor = UIColor.second
-        UINavigationBar.appearance().tintColor = UIColor.white
-        UINavigationBar.appearance().barStyle = .blackOpaque
+        
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.toolbarTintColor = UIColor.primary
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        window?.rootViewController = UINavigationController(rootViewController: MenuViewController())
+//        window?.rootViewController = UINavigationController(rootViewController: MenuViewController())
+        window?.rootViewController = UINavigationController(rootViewController: SignInViewController())
         return true
     }
 

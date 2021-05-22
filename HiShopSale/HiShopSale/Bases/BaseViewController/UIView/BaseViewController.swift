@@ -48,6 +48,25 @@ open class BaseViewController: UIViewController {
         return hub
     }()
     
+    lazy var searchBar: PaddingTextField = {
+        let searchBar = PaddingTextField()
+        searchBar.setDefaultBackgroundColor()
+        searchBar.layer.cornerRadius = 5
+        searchBar.layer.masksToBounds = true
+        searchBar.placeholder = TextManager.search.localized()
+        searchBar.font = UIFont.systemFont(ofSize: FontSize.h2.rawValue)
+        searchBar.returnKeyType = .search
+        searchBar.fontSizePlaceholder(text: TextManager.search.localized(), size: FontSize.h2.rawValue)
+        var rect = navigationController?.navigationBar.frame ?? CGRect.zero
+        rect.size.height = 36
+        searchBar.frame = rect
+        searchBar.clearButtonMode = .whileEditing
+        searchBar.addTarget(self, action: #selector(touchInSearchBar), for: .editingDidBegin)
+        searchBar.addTarget(self, action: #selector(searchBarValueChange(_:)), for: .editingChanged)
+        searchBar.delegate = self
+        return searchBar
+    }()
+    
     lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.isUserInteractionEnabled = true
@@ -70,10 +89,6 @@ open class BaseViewController: UIViewController {
     
     open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        if let navCtrl = navigationController {
-            navCtrl.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-        }
-        setupTabbar()
     }
     
     open override func viewDidLoad() {
@@ -131,12 +146,9 @@ open class BaseViewController: UIViewController {
     }
     
     // MARK: - Helper Method
-    
-    
-    
+
     func setupUIComponents() {
         self.view.setDefaultBackgroundColor()
-        self.setupTabbar()
         self.addBackButtonIfNeeded()
     }
     
@@ -144,14 +156,6 @@ open class BaseViewController: UIViewController {
         tapGestureOnSuperView.cancelsTouchesInView = false
         view.isUserInteractionEnabled = true
         view.addGestureRecognizer(tapGestureOnSuperView)
-    }
-    
-    private func setupTabbar() {
-        if navigationController?.viewControllers.count ?? 0 > 1 {
-            tabBarController?.tabBar.isHidden = true
-        } else {
-            tabBarController?.tabBar.isHidden = false
-        }
     }
 
     func addBackButtonIfNeeded() {
@@ -167,7 +171,7 @@ open class BaseViewController: UIViewController {
         let customButton = UIButton(type: .custom)
         customButton.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
         if itemModel.image != nil {
-            let image = itemModel.image?.withRenderingMode(.alwaysTemplate)
+            let image = itemModel.image?.withRenderingMode(.alwaysOriginal)
             customButton.setImage(image, for: .normal)
             customButton.tintColor = UIColor.white
         } else if itemModel.title != nil {
@@ -222,7 +226,23 @@ open class BaseViewController: UIViewController {
     
 }
 
-// MARK: - UIGestureRecognizerDelegate
+// MARK: - UITextFieldDelegate
+
+extension BaseViewController: UITextFieldDelegate {
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        searchBar.endEditing(true)
+        searchBar.resignFirstResponder()
+        return true
+    }
+    
+    public func textFieldDidBeginEditing(_ textField: UITextField) {
+        textField.addBottomBorder(UIColor.background)
+    }
+    
+    public func textFieldDidEndEditing(_ textField: UITextField) {
+        textField.addBottomBorder(UIColor.separator)
+    }
+}
 
 extension BaseViewController: UIGestureRecognizerDelegate {
     public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer,

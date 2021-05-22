@@ -8,7 +8,7 @@
 import UIKit
 
 class MenuViewController: BaseViewController {
-
+    
     // MARK: - Variables
     
     var isSlideInMenuPresented  = false
@@ -33,7 +33,7 @@ class MenuViewController: BaseViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.separatorStyle = .none
-        tableView.backgroundColor = UIColor.second
+        tableView.backgroundColor = UIColor.blackColor
         tableView.showsVerticalScrollIndicator = false
         tableView.registerReusableCell(MenuTableViewCell.self)
         return tableView
@@ -43,12 +43,20 @@ class MenuViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = TextManager.menuShop
-        self.setLeftNavigationBar(ImageManager.icon_menu)
+        self.navigationItem.title = TextManager.menuShop
         self.menuView.pintoMenu(view, with: slideInMenuPadding)
         self.containerView.edgeTo(view)
+        self.setLeftNavigationBar(ImageManager.icon_menu)
         self.layoutTableView()
     }
+    
+    // MARK: - Ovveride Method
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
+    // MARK: - UI Action
     
     override func touchUpInLeftBarButtonItem() {
         UIView.animate(withDuration: 0.5, delay: 0,
@@ -61,36 +69,33 @@ class MenuViewController: BaseViewController {
             print("Animate finished: \(finished)")
             self.isSlideInMenuPresented.toggle()
         }
+    }
+    
+}
 
-    }
-    
-    // MARK: - Ovveride Method
-    
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
-    
-    // MARK: - Helper Method
-    
-    
-    // MARK: - GET API
-    
-    // MARK: - Layout
+
+// MARK: - Layout
+
+extension MenuViewController {
     
     private func layoutTableView() {
         menuView.addSubview(tableView)
         tableView.snp.makeConstraints { (make) in
-            make.edges.equalToSuperview()
+            make.top.equalTo(topLayoutGuide.snp.bottom)
+            make.left.right.bottom.equalToSuperview()
         }
     }
-    
 }
+
+// MARK: - UITableViewDelegate
 
 extension MenuViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
     }
 }
+
+// MARK: - UITableViewDataSource
 
 extension MenuViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -99,7 +104,7 @@ extension MenuViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: MenuTableViewCell = tableView.dequeueReusableCell(for: indexPath)
-        cell.backgroundColor = UIColor.second
+        cell.backgroundColor = UIColor.clear
         return cell
     }
 }

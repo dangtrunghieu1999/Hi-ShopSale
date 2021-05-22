@@ -73,6 +73,11 @@
 		CF78B846264C395B0062F4A1 /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF78B845264C395B0062F4A1 /* MenuManager.swift */; };
 		CF78B849264C3AC50062F4A1 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF78B848264C3AC50062F4A1 /* MenuTableViewCell.swift */; };
 		EC5BCEFF3334EBF26F198900 /* Pods_HiShopSale.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756F86D88DC855CBDC7F0360 /* Pods_HiShopSale.framework */; };
+		F6831CEC2658B06400066171 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6831CEB2658B06400066171 /* ForgotPasswordViewController.swift */; };
+		F6B650272656B839002EC4BC /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B650262656B839002EC4BC /* SignInViewController.swift */; };
+		F6B6502B2656B849002EC4BC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B6502A2656B849002EC4BC /* SignUpViewController.swift */; };
+		F6B6FBD22658161C0064CAA8 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B6FBD12658161C0064CAA8 /* UserManager.swift */; };
+		F6B6FBD5265817730064CAA8 /* TextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B6FBD4265817730064CAA8 /* TextManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -146,6 +151,11 @@
 		CF78B841264C39300062F4A1 /* OrderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderManager.swift; sourceTree = "<group>"; };
 		CF78B845264C395B0062F4A1 /* MenuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
 		CF78B848264C3AC50062F4A1 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		F6831CEB2658B06400066171 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		F6B650262656B839002EC4BC /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		F6B6502A2656B849002EC4BC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		F6B6FBD12658161C0064CAA8 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		F6B6FBD4265817730064CAA8 /* TextManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +235,7 @@
 		CF78B78D264C0FFD0062F4A1 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				F6B650242656B7C9002EC4BC /* User */,
 				CF78B7EA264C18090062F4A1 /* Menu */,
 				CF78B79F264C12080062F4A1 /* Order */,
 				CF78B79E264C11FC0062F4A1 /* Chat */,
@@ -232,7 +243,6 @@
 				CF78B79C264C11B70062F4A1 /* Statistical */,
 				CF78B79B264C11B20062F4A1 /* Shop */,
 				CF78B79A264C11A80062F4A1 /* Product */,
-				CF78B799264C119C0062F4A1 /* SignIn */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -268,6 +278,8 @@
 				CF78B838264C26030062F4A1 /* ImageManager.swift */,
 				CF78B841264C39300062F4A1 /* OrderManager.swift */,
 				CF78B845264C395B0062F4A1 /* MenuManager.swift */,
+				F6B6FBD12658161C0064CAA8 /* UserManager.swift */,
+				F6B6FBD4265817730064CAA8 /* TextManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -305,6 +317,7 @@
 		CF78B799264C119C0062F4A1 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
+				F6B650262656B839002EC4BC /* SignInViewController.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -426,6 +439,32 @@
 				CF78B81E264C18860062F4A1 /* UITableView+Extension.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		F6831CE92658B05500066171 /* ForgotPW */ = {
+			isa = PBXGroup;
+			children = (
+				F6831CEB2658B06400066171 /* ForgotPasswordViewController.swift */,
+			);
+			path = ForgotPW;
+			sourceTree = "<group>";
+		};
+		F6B650242656B7C9002EC4BC /* User */ = {
+			isa = PBXGroup;
+			children = (
+				F6831CE92658B05500066171 /* ForgotPW */,
+				F6B650252656B7D3002EC4BC /* SignUp */,
+				CF78B799264C119C0062F4A1 /* SignIn */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		F6B650252656B7D3002EC4BC /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				F6B6502A2656B849002EC4BC /* SignUpViewController.swift */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 		FB64DCE4C0AB1354FF82F5C5 /* Frameworks */ = {
@@ -591,14 +630,17 @@
 				CF78B7BF264C14DB0062F4A1 /* BaseShimmerView.swift in Sources */,
 				CF78B823264C18860062F4A1 /* UILabel+Extension.swift in Sources */,
 				CF78B849264C3AC50062F4A1 /* MenuTableViewCell.swift in Sources */,
+				F6B6502B2656B849002EC4BC /* SignUpViewController.swift in Sources */,
 				CF78B827264C18860062F4A1 /* UINavigationController+Extension.swift in Sources */,
 				CF78B7C2264C14DB0062F4A1 /* ShimmerLabel.swift in Sources */,
 				CF78B7E7264C17EC0062F4A1 /* NotificationViewController.swift in Sources */,
+				F6831CEC2658B06400066171 /* ForgotPasswordViewController.swift in Sources */,
 				CF78B82E264C18860062F4A1 /* UITableView+Extension.swift in Sources */,
 				CF78B824264C18860062F4A1 /* UIButton+Extension.swift in Sources */,
 				CF78B80A264C18620062F4A1 /* NSAttributedString+Extension.swift in Sources */,
 				CF78B809264C18620062F4A1 /* Double+Extension.swift in Sources */,
 				CF78B7CA264C14DB0062F4A1 /* PaddingTextView.swift in Sources */,
+				F6B6FBD5265817730064CAA8 /* TextManager.swift in Sources */,
 				CF78B7B8264C14DB0062F4A1 /* BaseTableViewCell.swift in Sources */,
 				CF78B7BB264C14DB0062F4A1 /* BaseAlertViewController.swift in Sources */,
 				CF78B826264C18860062F4A1 /* UIImage+Extension.swift in Sources */,
@@ -608,6 +650,7 @@
 				CF78B82A264C18860062F4A1 /* UICollectionView+Extension.swift in Sources */,
 				CF78B808264C18620062F4A1 /* Comparable+Clamp.swift in Sources */,
 				CF78B757264C0F590062F4A1 /* ViewController.swift in Sources */,
+				F6B6FBD22658161C0064CAA8 /* UserManager.swift in Sources */,
 				CF78B828264C18860062F4A1 /* URL+Extension.swift in Sources */,
 				CF78B7BC264C14DB0062F4A1 /* BaseCollectionViewCell.swift in Sources */,
 				CF78B7FE264C18620062F4A1 /* Int+Extension.swift in Sources */,
@@ -627,6 +670,7 @@
 				CF78B82D264C18860062F4A1 /* UITextField+Extension.swift in Sources */,
 				CF78B802264C18620062F4A1 /* CGFloat+Additions.swift in Sources */,
 				CF78B83C264C26760062F4A1 /* HomeViewController.swift in Sources */,
+				F6B650272656B839002EC4BC /* SignInViewController.swift in Sources */,
 				CF78B7C1264C14DB0062F4A1 /* ShimmerImageView.swift in Sources */,
 				CF78B7E1264C17B60062F4A1 /* ShopViewController.swift in Sources */,
 				CF78B7C7264C14DB0062F4A1 /* PaddingTextField.swift in Sources */,

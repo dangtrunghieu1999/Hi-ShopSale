@@ -56,7 +56,7 @@ class Dimension {
     }
    
     var largeMargin_38: CGFloat {
-        return 42 * self.widthScale
+        return 38 * self.widthScale
     }
     
     var largeMargin_42: CGFloat {
@@ -152,7 +152,7 @@ class Dimension {
     // MARK: - TextField
     
     var defaultHeightTextField: CGFloat {
-        return 40 * heightScale
+        return 50 * heightScale
     }
     
     var cornerRadiusSmall: CGFloat {

@@ -8,6 +8,6 @@
 import UIKit
 
 extension TextManager {
-    static let menuShop                               = "Menu Shop"
+    static let menuShop                               = "Trang chủ Shop"
 }
 
