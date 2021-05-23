@@ -109,7 +109,7 @@ extension ForgotPasswordViewController {
         view.addSubview(nextButton)
         nextButton.snp.makeConstraints { (make) in
             make.top.equalTo(usernameTextField.snp.bottom)
-                .offset(Dimension.shared.mediumMargin)
+                .offset(Dimension.shared.normalMargin)
             make.left.right.equalTo(usernameTextField)
             make.height.equalTo(Dimension.shared.largeHeightButton)
         }

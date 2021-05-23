@@ -169,7 +169,7 @@ class SignUpViewController: BaseViewController {
         button.layer.cornerRadius = Dimension.shared.cornerRadiusSmall
         button.layer.masksToBounds = true
         button.addTarget(self, action: #selector(tapOnSignIn), for: .touchUpInside)
-        button.isUserInteractionEnabled = false
+        button.isUserInteractionEnabled = true
         return button
     }()
     
@@ -196,12 +196,7 @@ class SignUpViewController: BaseViewController {
 extension SignUpViewController {
 
     @objc private func tapOnSignIn() {
-        let vc = MenuViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    @objc private func tapOnSignUp() {
-        let vc = SignUpViewController()
+        let vc = VerifyOTPViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

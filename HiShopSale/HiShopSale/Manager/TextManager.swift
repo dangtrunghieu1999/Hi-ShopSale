@@ -40,5 +40,8 @@ extension TextManager {
     static let linkGGMapPlaceholder                 = "Nhập link google map"
     static let linkWebsite                          = "Link website"
     static let linkWebsitePlaceHolder               = "Nhập link website"
-
+    static let yourCode                             = "Mã code"
+    static let resendCodeAgain                      = "Bạn không nhận được mã code?"
+    static let againCode                            = "Thử lại"
+    static let verifyCode                           = "Xác thực tài khoản"
 }
