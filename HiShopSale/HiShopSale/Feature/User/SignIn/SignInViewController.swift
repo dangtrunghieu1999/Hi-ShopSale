@@ -25,14 +25,6 @@ class SignInViewController: BaseViewController {
         return imageView
     }()
     
-    fileprivate let welcomeTitleLabel: UILabel = {
-        let label = UILabel()
-        label.text = TextManager.welcomeShop
-        label.textAlignment = .center
-        label.font = UIFont.systemFont(ofSize: FontSize.body.rawValue, weight: .bold)
-        return label
-    }()
-    
     let centerStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis         = .vertical
@@ -46,6 +38,8 @@ class SignInViewController: BaseViewController {
         let textField = TitleTextField()
         textField.titleText   = TextManager.username.localized()
         textField.placeholder = TextManager.enterUsername.localized()
+        textField.textField.fontSizePlaceholder(text: TextManager.enterUsername.localized(),
+                                                size: FontSize.h1.rawValue)
         textField.addTarget(self, action: #selector(textFieldValueChange(_:)), for: .editingChanged)
         textField.keyboardType = .numberPad
         
@@ -55,7 +49,8 @@ class SignInViewController: BaseViewController {
     fileprivate lazy var passwordTextField: TitleTextField = {
         let textField = TitleTextField()
         textField.titleText   = TextManager.password.localized()
-        textField.placeholder = TextManager.enterPassword.localized()
+        textField.textField.fontSizePlaceholder(text: TextManager.enterPassword.localized(),
+                                                size: FontSize.h1.rawValue)
         textField.textField.isSecureTextEntry = true
         textField.addTarget(self, action: #selector(textFieldValueChange(_:)), for: .editingChanged)
         return textField
@@ -75,10 +70,10 @@ class SignInViewController: BaseViewController {
     fileprivate lazy var signUpButton: UIButton = {
         let button = UIButton()
         button.setTitle(TextManager.signUp.localized(), for: .normal)
-        button.backgroundColor = UIColor.primary
+        button.backgroundColor = UIColor.thirdColor
         button.layer.cornerRadius = Dimension.shared.cornerRadiusSmall
         button.layer.masksToBounds = true
-        button.addTarget(self, action: #selector(tapOnSignIn), for: .touchUpInside)
+        button.addTarget(self, action: #selector(tapOnSignUp), for: .touchUpInside)
         return button
     }()
     
@@ -105,7 +100,6 @@ class SignInViewController: BaseViewController {
         layoutSignUpButton()
         layoutTopView()
         layoutLogoImageView()
-        layoutWelcomeTitleLabel()
     }
     
 }
@@ -121,6 +115,11 @@ extension SignInViewController {
     
     @objc private func tapOnSignIn() {
         let vc = MenuViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc private func tapOnSignUp() {
+        let vc = SignUpViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -203,12 +202,4 @@ extension SignInViewController {
         }
     }
     
-    private func layoutWelcomeTitleLabel() {
-        topView.addSubview(welcomeTitleLabel)
-        welcomeTitleLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(logoImageView.snp.bottom)
-                .offset(Dimension.shared.normalMargin)
-            make.left.right.equalTo(centerStackView)
-        }
-    }
 }

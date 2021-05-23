@@ -11,7 +11,7 @@ extension UITextField {
     
     func fontSizePlaceholder(text: String, size: CGFloat) {
         attributedPlaceholder = NSAttributedString(string: text, attributes: [
-            .foregroundColor: UIColor.lightBodyText,
+            .foregroundColor: UIColor.placeholder,
             .font: UIFont.systemFont(ofSize: size)
         ])
     }

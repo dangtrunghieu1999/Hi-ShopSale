@@ -15,4 +15,5 @@ class ImageManager {
     static let back                                 = UIImage(named: "back")
     static let icon_logo                            = UIImage(named: "icon_logo")
     static let icon_logo2                           = UIImage(named: "icon_logo2")
+    static let dropDown                             = UIImage(named: "dropDown")
 }

@@ -67,4 +67,10 @@ public extension UIViewController {
         }
         return nil
     }
+    
+    class func setRootVCBySinInVC() {
+        guard let window = UIApplication.shared.keyWindow else { return }
+        window.rootViewController = UINavigationController(rootViewController: MenuViewController())
+    }
+
 }

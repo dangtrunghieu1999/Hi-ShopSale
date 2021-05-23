@@ -73,6 +73,21 @@
 		CF78B846264C395B0062F4A1 /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF78B845264C395B0062F4A1 /* MenuManager.swift */; };
 		CF78B849264C3AC50062F4A1 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF78B848264C3AC50062F4A1 /* MenuTableViewCell.swift */; };
 		EC5BCEFF3334EBF26F198900 /* Pods_HiShopSale.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756F86D88DC855CBDC7F0360 /* Pods_HiShopSale.framework */; };
+		F627AA0E2659133C0012462C /* BaseTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627AA0D2659133C0012462C /* BaseTextView.swift */; };
+		F627AA1E26591B160012462C /* District.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627AA1B26591B160012462C /* District.swift */; };
+		F627AA1F26591B160012462C /* Province.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627AA1C26591B160012462C /* Province.swift */; };
+		F627AA2026591B160012462C /* Ward.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627AA1D26591B160012462C /* Ward.swift */; };
+		F627AA2826591B630012462C /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627AA2226591B620012462C /* NetworkLogger.swift */; };
+		F627AA2926591B630012462C /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627AA2326591B620012462C /* APIService.swift */; };
+		F627AA2A26591B630012462C /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627AA2426591B620012462C /* APIResponse.swift */; };
+		F627AA2B26591B630012462C /* ServiceErrorAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627AA2526591B620012462C /* ServiceErrorAPI.swift */; };
+		F627AA2C26591B630012462C /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627AA2626591B630012462C /* APIConfig.swift */; };
+		F627AA2D26591B630012462C /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627AA2726591B630012462C /* EndPointType.swift */; };
+		F627AA3126591C9F0012462C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627AA3026591C9F0012462C /* User.swift */; };
+		F627AA3526591D1A0012462C /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627AA3426591D1A0012462C /* AlertManager.swift */; };
+		F627AA3826591DCD0012462C /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627AA3726591DCD0012462C /* AppInfo.swift */; };
+		F6800BC72659EF2F0020D39C /* VerifyOTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6800BC62659EF2F0020D39C /* VerifyOTPViewController.swift */; };
+		F6800BCA2659EF3D0020D39C /* EnterNewPWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6800BC92659EF3D0020D39C /* EnterNewPWViewController.swift */; };
 		F6831CEC2658B06400066171 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6831CEB2658B06400066171 /* ForgotPasswordViewController.swift */; };
 		F6B650272656B839002EC4BC /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B650262656B839002EC4BC /* SignInViewController.swift */; };
 		F6B6502B2656B849002EC4BC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B6502A2656B849002EC4BC /* SignUpViewController.swift */; };
@@ -151,6 +166,21 @@
 		CF78B841264C39300062F4A1 /* OrderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderManager.swift; sourceTree = "<group>"; };
 		CF78B845264C395B0062F4A1 /* MenuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
 		CF78B848264C3AC50062F4A1 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		F627AA0D2659133C0012462C /* BaseTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextView.swift; sourceTree = "<group>"; };
+		F627AA1B26591B160012462C /* District.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = District.swift; sourceTree = "<group>"; };
+		F627AA1C26591B160012462C /* Province.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Province.swift; sourceTree = "<group>"; };
+		F627AA1D26591B160012462C /* Ward.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ward.swift; sourceTree = "<group>"; };
+		F627AA2226591B620012462C /* NetworkLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		F627AA2326591B620012462C /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		F627AA2426591B620012462C /* APIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		F627AA2526591B620012462C /* ServiceErrorAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceErrorAPI.swift; sourceTree = "<group>"; };
+		F627AA2626591B630012462C /* APIConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		F627AA2726591B630012462C /* EndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		F627AA3026591C9F0012462C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F627AA3426591D1A0012462C /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		F627AA3726591DCD0012462C /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
+		F6800BC62659EF2F0020D39C /* VerifyOTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyOTPViewController.swift; sourceTree = "<group>"; };
+		F6800BC92659EF3D0020D39C /* EnterNewPWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNewPWViewController.swift; sourceTree = "<group>"; };
 		F6831CEB2658B06400066171 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		F6B650262656B839002EC4BC /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		F6B6502A2656B849002EC4BC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -235,6 +265,7 @@
 		CF78B78D264C0FFD0062F4A1 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				F627AA0C265913240012462C /* Base */,
 				F6B650242656B7C9002EC4BC /* User */,
 				CF78B7EA264C18090062F4A1 /* Menu */,
 				CF78B79F264C12080062F4A1 /* Order */,
@@ -261,6 +292,7 @@
 			children = (
 				CF78B835264C1A000062F4A1 /* AppConfig.swift */,
 				CF78B831264C19390062F4A1 /* Dimension.swift */,
+				F627AA3726591DCD0012462C /* AppInfo.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -268,6 +300,12 @@
 		CF78B790264C100C0062F4A1 /* APIService */ = {
 			isa = PBXGroup;
 			children = (
+				F627AA2626591B630012462C /* APIConfig.swift */,
+				F627AA2426591B620012462C /* APIResponse.swift */,
+				F627AA2326591B620012462C /* APIService.swift */,
+				F627AA2726591B630012462C /* EndPointType.swift */,
+				F627AA2226591B620012462C /* NetworkLogger.swift */,
+				F627AA2526591B620012462C /* ServiceErrorAPI.swift */,
 			);
 			path = APIService;
 			sourceTree = "<group>";
@@ -280,6 +318,7 @@
 				CF78B845264C395B0062F4A1 /* MenuManager.swift */,
 				F6B6FBD12658161C0064CAA8 /* UserManager.swift */,
 				F6B6FBD4265817730064CAA8 /* TextManager.swift */,
+				F627AA3426591D1A0012462C /* AlertManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -332,6 +371,7 @@
 		CF78B79B264C11B20062F4A1 /* Shop */ = {
 			isa = PBXGroup;
 			children = (
+				F627AA1626591ACC0012462C /* Model */,
 				CF78B7E3264C17CB0062F4A1 /* InfoShopViewController.swift */,
 				CF78B7E0264C17B60062F4A1 /* ShopViewController.swift */,
 			);
@@ -441,6 +481,48 @@
 			path = UIKit;
 			sourceTree = "<group>";
 		};
+		F627AA092658FE890012462C /* EnterNewPW */ = {
+			isa = PBXGroup;
+			children = (
+				F6800BC92659EF3D0020D39C /* EnterNewPWViewController.swift */,
+			);
+			path = EnterNewPW;
+			sourceTree = "<group>";
+		};
+		F627AA0A2658FE950012462C /* VerifyOTP */ = {
+			isa = PBXGroup;
+			children = (
+				F6800BC62659EF2F0020D39C /* VerifyOTPViewController.swift */,
+			);
+			path = VerifyOTP;
+			sourceTree = "<group>";
+		};
+		F627AA0C265913240012462C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F627AA0D2659133C0012462C /* BaseTextView.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F627AA1626591ACC0012462C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F627AA1B26591B160012462C /* District.swift */,
+				F627AA1C26591B160012462C /* Province.swift */,
+				F627AA1D26591B160012462C /* Ward.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F627AA2F26591C990012462C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F627AA3026591C9F0012462C /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F6831CE92658B05500066171 /* ForgotPW */ = {
 			isa = PBXGroup;
 			children = (
@@ -452,6 +534,9 @@
 		F6B650242656B7C9002EC4BC /* User */ = {
 			isa = PBXGroup;
 			children = (
+				F627AA2F26591C990012462C /* Model */,
+				F627AA0A2658FE950012462C /* VerifyOTP */,
+				F627AA092658FE890012462C /* EnterNewPW */,
 				F6831CE92658B05500066171 /* ForgotPW */,
 				F6B650252656B7D3002EC4BC /* SignUp */,
 				CF78B799264C119C0062F4A1 /* SignIn */,
@@ -608,7 +693,9 @@
 			files = (
 				CF78B842264C39300062F4A1 /* OrderManager.swift in Sources */,
 				CF78B820264C18860062F4A1 /* UIFont+Extension.swift in Sources */,
+				F627AA2D26591B630012462C /* EndPointType.swift in Sources */,
 				CF78B81F264C18860062F4A1 /* UIImageView+Extension.swift in Sources */,
+				F627AA2026591B160012462C /* Ward.swift in Sources */,
 				CF78B7FF264C18620062F4A1 /* Dictionary+Extension.swift in Sources */,
 				CF78B822264C18860062F4A1 /* UIColor+Extension.swift in Sources */,
 				CF78B807264C18620062F4A1 /* CGSize+Extension.swift in Sources */,
@@ -618,38 +705,48 @@
 				CF78B803264C18620062F4A1 /* Array+Extension.swift in Sources */,
 				CF78B7C4264C14DB0062F4A1 /* TitleAndContent.swift in Sources */,
 				CF78B7B9264C14DB0062F4A1 /* BaseCollectionViewHeaderFooterCell.swift in Sources */,
+				F627AA2C26591B630012462C /* APIConfig.swift in Sources */,
 				CF78B7E4264C17CB0062F4A1 /* InfoShopViewController.swift in Sources */,
 				CF78B7BE264C14DB0062F4A1 /* ShimmerButton.swift in Sources */,
 				CF78B804264C18620062F4A1 /* UserDefault+Extension.swift in Sources */,
+				F627AA1F26591B160012462C /* Province.swift in Sources */,
 				CF78B801264C18620062F4A1 /* String+Extension.swift in Sources */,
 				CF78B846264C395B0062F4A1 /* MenuManager.swift in Sources */,
 				CF78B829264C18860062F4A1 /* UIViewController+Extenstion.swift in Sources */,
 				CF78B83F264C33FC0062F4A1 /* EmptyView.swift in Sources */,
 				CF78B7C0264C14DB0062F4A1 /* BaseShimmerProtocol.swift in Sources */,
 				CF78B7EC264C18150062F4A1 /* MenuViewController.swift in Sources */,
+				F627AA2A26591B630012462C /* APIResponse.swift in Sources */,
 				CF78B7BF264C14DB0062F4A1 /* BaseShimmerView.swift in Sources */,
 				CF78B823264C18860062F4A1 /* UILabel+Extension.swift in Sources */,
 				CF78B849264C3AC50062F4A1 /* MenuTableViewCell.swift in Sources */,
 				F6B6502B2656B849002EC4BC /* SignUpViewController.swift in Sources */,
 				CF78B827264C18860062F4A1 /* UINavigationController+Extension.swift in Sources */,
+				F627AA2B26591B630012462C /* ServiceErrorAPI.swift in Sources */,
+				F627AA3526591D1A0012462C /* AlertManager.swift in Sources */,
 				CF78B7C2264C14DB0062F4A1 /* ShimmerLabel.swift in Sources */,
 				CF78B7E7264C17EC0062F4A1 /* NotificationViewController.swift in Sources */,
 				F6831CEC2658B06400066171 /* ForgotPasswordViewController.swift in Sources */,
 				CF78B82E264C18860062F4A1 /* UITableView+Extension.swift in Sources */,
 				CF78B824264C18860062F4A1 /* UIButton+Extension.swift in Sources */,
+				F627AA1E26591B160012462C /* District.swift in Sources */,
 				CF78B80A264C18620062F4A1 /* NSAttributedString+Extension.swift in Sources */,
 				CF78B809264C18620062F4A1 /* Double+Extension.swift in Sources */,
 				CF78B7CA264C14DB0062F4A1 /* PaddingTextView.swift in Sources */,
+				F627AA3126591C9F0012462C /* User.swift in Sources */,
 				F6B6FBD5265817730064CAA8 /* TextManager.swift in Sources */,
 				CF78B7B8264C14DB0062F4A1 /* BaseTableViewCell.swift in Sources */,
 				CF78B7BB264C14DB0062F4A1 /* BaseAlertViewController.swift in Sources */,
 				CF78B826264C18860062F4A1 /* UIImage+Extension.swift in Sources */,
+				F627AA2826591B630012462C /* NetworkLogger.swift in Sources */,
 				CF78B82C264C18860062F4A1 /* PHAsset+Extension.swift in Sources */,
 				CF78B800264C18620062F4A1 /* CGPoint+Extensions.swift in Sources */,
 				CF78B825264C18860062F4A1 /* UIView+Extension.swift in Sources */,
 				CF78B82A264C18860062F4A1 /* UICollectionView+Extension.swift in Sources */,
 				CF78B808264C18620062F4A1 /* Comparable+Clamp.swift in Sources */,
 				CF78B757264C0F590062F4A1 /* ViewController.swift in Sources */,
+				F6800BCA2659EF3D0020D39C /* EnterNewPWViewController.swift in Sources */,
+				F627AA2926591B630012462C /* APIService.swift in Sources */,
 				F6B6FBD22658161C0064CAA8 /* UserManager.swift in Sources */,
 				CF78B828264C18860062F4A1 /* URL+Extension.swift in Sources */,
 				CF78B7BC264C14DB0062F4A1 /* BaseCollectionViewCell.swift in Sources */,
@@ -657,6 +754,7 @@
 				CF78B7FD264C18620062F4A1 /* Notification+Extension.swift in Sources */,
 				CF78B832264C19390062F4A1 /* Dimension.swift in Sources */,
 				CF78B753264C0F590062F4A1 /* AppDelegate.swift in Sources */,
+				F627AA3826591DCD0012462C /* AppInfo.swift in Sources */,
 				CF78B805264C18620062F4A1 /* Date+Extension.swift in Sources */,
 				CF78B82B264C18860062F4A1 /* UIApplication+Exension.swift in Sources */,
 				CF78B806264C18620062F4A1 /* JSON+Parser.swift in Sources */,
@@ -666,8 +764,10 @@
 				CF78B821264C18860062F4A1 /* GradientPoint.swift in Sources */,
 				CF78B7BA264C14DB0062F4A1 /* BaseTableViewHeaderFooter.swift in Sources */,
 				CF78B7C8264C14DB0062F4A1 /* PaddingLabel.swift in Sources */,
+				F627AA0E2659133C0012462C /* BaseTextView.swift in Sources */,
 				CF78B7B7264C14DB0062F4A1 /* BaseViewController.swift in Sources */,
 				CF78B82D264C18860062F4A1 /* UITextField+Extension.swift in Sources */,
+				F6800BC72659EF2F0020D39C /* VerifyOTPViewController.swift in Sources */,
 				CF78B802264C18620062F4A1 /* CGFloat+Additions.swift in Sources */,
 				CF78B83C264C26760062F4A1 /* HomeViewController.swift in Sources */,
 				F6B650272656B839002EC4BC /* SignInViewController.swift in Sources */,
