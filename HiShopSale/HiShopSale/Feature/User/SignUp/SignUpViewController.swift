@@ -50,6 +50,17 @@ class SignUpViewController: BaseViewController {
         return textField
     }()
     
+    fileprivate lazy var passwordTextField: TitleTextField = {
+        let textField = TitleTextField()
+        textField.titleText   = TextManager.password.localized()
+        textField.textField.fontSizePlaceholder(text: TextManager.enterPassword.localized(),
+                                                size: FontSize.h1.rawValue)
+        textField.textField.isSecureTextEntry = true
+        textField.addTarget(self, action: #selector(textFieldValueChange(_:)), for: .editingChanged)
+        return textField
+    }()
+
+    
     fileprivate lazy var shopAddressTextView: BaseTextView = {
         let textview = BaseTextView()
         textview.titleText = TextManager.shopAddressTitle
@@ -178,14 +189,7 @@ class SignUpViewController: BaseViewController {
         navigationItem.title = TextManager.signUpShop
         layoutScrollView()
         layoutCenterStackView()
-        layoutShopNameTextField()
-        layoutShopPhoneTextField()
-        layoutShopAddressTextView()
-        layoutProvinceTextField()
-        layoutDistrictTextField()
-        layoutWardTextField()
-        layoutHotlineTextField()
-        layoutMapTextField()
+        layoutEnterInfoUserShop()
         layoutSignUpButton()
     }
 
@@ -232,39 +236,16 @@ extension SignUpViewController {
         }
     }
     
-    private func layoutShopNameTextField() {
+    private func layoutEnterInfoUserShop() {
         centerStackView.addArrangedSubview(shopNameTextField)
-    }
-    
-    private func layoutShopPhoneTextField() {
         centerStackView.addArrangedSubview(shopPhoneTextField)
-    }
-    
-    private func layoutShopAddressTextView() {
+        centerStackView.addArrangedSubview(passwordTextField)
         centerStackView.addArrangedSubview(shopAddressTextView)
-    }
-    
-    private func layoutProvinceTextField() {
         centerStackView.addArrangedSubview(provinceTextField)
-    }
-     
-    private func layoutDistrictTextField() {
         centerStackView.addArrangedSubview(districtTextField)
-    }
-    
-    private func layoutWardTextField() {
         centerStackView.addArrangedSubview(wardTextField)
-    }
-    
-    private func layoutHotlineTextField() {
         centerStackView.addArrangedSubview(shopHotLineTextField)
-    }
-    
-    private func layoutMapTextField() {
         centerStackView.addArrangedSubview(shopMapTextField)
-    }
-
-    private func layoutLinkWebsiteTextField() {
         centerStackView.addArrangedSubview(shopLinkWebsiteTextField)
     }
     
