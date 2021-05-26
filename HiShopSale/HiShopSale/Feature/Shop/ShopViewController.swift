@@ -18,7 +18,7 @@ class ShopViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationItem.title = TextManager.store
     }
     
     // MARK: - Helper Method

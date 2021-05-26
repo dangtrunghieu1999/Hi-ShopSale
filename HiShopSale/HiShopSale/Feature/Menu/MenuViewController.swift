@@ -93,6 +93,34 @@ extension MenuViewController: UITableViewDelegate {
         return 70
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let type = MenuType(rawValue: indexPath.row + 1)
+        switch type {
+        case .home:
+            let vc = MenuViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        case .product:
+            let vc = ProductViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        case .store:
+            let vc = ShopViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        case .plus:
+            let vc = CreateProductViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        case .order:
+            let vc = ManagerOrderViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        case .chat:
+            let vc = ChatViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        case .statistics:
+            let vc = StatisticalViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        default:
+            break
+        }
+    }
 }
 
 // MARK: - UITableViewDataSource

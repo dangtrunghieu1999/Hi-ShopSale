@@ -17,7 +17,6 @@ extension TextManager {
     static let statistics                             = "Thống kê"
     static let home                                   = "Trang chủ"
     static let logout                                 = "Đăng xuất"
-    
 }
 
 

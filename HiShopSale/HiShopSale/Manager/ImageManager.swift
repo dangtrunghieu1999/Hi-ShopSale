@@ -29,3 +29,9 @@ extension ImageManager {
     static let icon_home                            = UIImage(named: "icon_home")
     static let icon_logout                          = UIImage(named: "icon_logout")
 }
+
+extension ImageManager {
+    static let addNewImgPlaceHolder                 = UIImage(named: "addNewImgPlaceHolder")
+    static let closeCircle                          = UIImage(named: "closeCircle")
+
+}

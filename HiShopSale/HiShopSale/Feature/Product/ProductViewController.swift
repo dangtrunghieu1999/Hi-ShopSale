@@ -11,6 +11,7 @@ class ProductViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = TextManager.product
     }
 
 }
