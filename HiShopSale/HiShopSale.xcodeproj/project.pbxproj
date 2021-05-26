@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CF78B753264C0F590062F4A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF78B752264C0F590062F4A1 /* AppDelegate.swift */; };
-		CF78B757264C0F590062F4A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF78B756264C0F590062F4A1 /* ViewController.swift */; };
 		CF78B75C264C0F5A0062F4A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF78B75B264C0F5A0062F4A1 /* Assets.xcassets */; };
 		CF78B75F264C0F5A0062F4A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF78B75D264C0F5A0062F4A1 /* LaunchScreen.storyboard */; };
 		CF78B7B7264C14DB0062F4A1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF78B7A1264C14DB0062F4A1 /* BaseViewController.swift */; };
@@ -74,6 +73,10 @@
 		CF78B849264C3AC50062F4A1 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF78B848264C3AC50062F4A1 /* MenuTableViewCell.swift */; };
 		EC5BCEFF3334EBF26F198900 /* Pods_HiShopSale.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756F86D88DC855CBDC7F0360 /* Pods_HiShopSale.framework */; };
 		F61190A3265E8D4F0008F2AF /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61190A2265E8D4F0008F2AF /* MenuViewModel.swift */; };
+		F61190A6265E95620008F2AF /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61190A5265E95620008F2AF /* ChatViewController.swift */; };
+		F61190A9265E957F0008F2AF /* ManagerOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61190A8265E957F0008F2AF /* ManagerOrderViewController.swift */; };
+		F61190AC265E95A60008F2AF /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61190AB265E95A60008F2AF /* ProductViewController.swift */; };
+		F61190AF265E96080008F2AF /* StatisticalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61190AE265E96080008F2AF /* StatisticalViewController.swift */; };
 		F627AA0E2659133C0012462C /* BaseTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627AA0D2659133C0012462C /* BaseTextView.swift */; };
 		F627AA1E26591B160012462C /* District.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627AA1B26591B160012462C /* District.swift */; };
 		F627AA1F26591B160012462C /* Province.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627AA1C26591B160012462C /* Province.swift */; };
@@ -102,7 +105,6 @@
 		756F86D88DC855CBDC7F0360 /* Pods_HiShopSale.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiShopSale.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF78B74F264C0F590062F4A1 /* HiShopSale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiShopSale.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF78B752264C0F590062F4A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CF78B756264C0F590062F4A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CF78B75B264C0F5A0062F4A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF78B75E264C0F5A0062F4A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF78B760264C0F5A0062F4A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -168,6 +170,10 @@
 		CF78B845264C395B0062F4A1 /* MenuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
 		CF78B848264C3AC50062F4A1 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		F61190A2265E8D4F0008F2AF /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		F61190A5265E95620008F2AF /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		F61190A8265E957F0008F2AF /* ManagerOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerOrderViewController.swift; sourceTree = "<group>"; };
+		F61190AB265E95A60008F2AF /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		F61190AE265E96080008F2AF /* StatisticalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticalViewController.swift; sourceTree = "<group>"; };
 		F627AA0D2659133C0012462C /* BaseTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextView.swift; sourceTree = "<group>"; };
 		F627AA1B26591B160012462C /* District.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = District.swift; sourceTree = "<group>"; };
 		F627AA1C26591B160012462C /* Province.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Province.swift; sourceTree = "<group>"; };
@@ -239,7 +245,6 @@
 				CF78B78B264C0FF20062F4A1 /* Bases */,
 				CF78B792264C10CF0062F4A1 /* Manager */,
 				CF78B78D264C0FFD0062F4A1 /* Feature */,
-				CF78B756264C0F590062F4A1 /* ViewController.swift */,
 				CF78B760264C0F5A0062F4A1 /* Info.plist */,
 			);
 			path = HiShopSale;
@@ -267,8 +272,9 @@
 		CF78B78D264C0FFD0062F4A1 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
-				F627AA0C265913240012462C /* Base */,
 				F6B650242656B7C9002EC4BC /* User */,
+				F627AA0C265913240012462C /* Base */,
+				F61190B1265E96190008F2AF /* Home */,
 				CF78B7EA264C18090062F4A1 /* Menu */,
 				CF78B79F264C12080062F4A1 /* Order */,
 				CF78B79E264C11FC0062F4A1 /* Chat */,
@@ -366,6 +372,7 @@
 		CF78B79A264C11A80062F4A1 /* Product */ = {
 			isa = PBXGroup;
 			children = (
+				F61190AB265E95A60008F2AF /* ProductViewController.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -383,6 +390,7 @@
 		CF78B79C264C11B70062F4A1 /* Statistical */ = {
 			isa = PBXGroup;
 			children = (
+				F61190AE265E96080008F2AF /* StatisticalViewController.swift */,
 			);
 			path = Statistical;
 			sourceTree = "<group>";
@@ -398,6 +406,7 @@
 		CF78B79E264C11FC0062F4A1 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				F61190A5265E95620008F2AF /* ChatViewController.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -405,6 +414,7 @@
 		CF78B79F264C12080062F4A1 /* Order */ = {
 			isa = PBXGroup;
 			children = (
+				F61190A8265E957F0008F2AF /* ManagerOrderViewController.swift */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -455,7 +465,6 @@
 			children = (
 				F61190A1265E8CBE0008F2AF /* ViewModel */,
 				CF78B7EB264C18150062F4A1 /* MenuViewController.swift */,
-				CF78B83B264C26760062F4A1 /* HomeViewController.swift */,
 				CF78B848264C3AC50062F4A1 /* MenuTableViewCell.swift */,
 			);
 			path = Menu;
@@ -490,6 +499,14 @@
 				F61190A2265E8D4F0008F2AF /* MenuViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F61190B1265E96190008F2AF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CF78B83B264C26760062F4A1 /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		F627AA092658FE890012462C /* EnterNewPW */ = {
@@ -730,6 +747,7 @@
 				CF78B7EC264C18150062F4A1 /* MenuViewController.swift in Sources */,
 				F627AA2A26591B630012462C /* APIResponse.swift in Sources */,
 				CF78B7BF264C14DB0062F4A1 /* BaseShimmerView.swift in Sources */,
+				F61190A6265E95620008F2AF /* ChatViewController.swift in Sources */,
 				CF78B823264C18860062F4A1 /* UILabel+Extension.swift in Sources */,
 				CF78B849264C3AC50062F4A1 /* MenuTableViewCell.swift in Sources */,
 				F6B6502B2656B849002EC4BC /* SignUpViewController.swift in Sources */,
@@ -747,6 +765,7 @@
 				CF78B7CA264C14DB0062F4A1 /* PaddingTextView.swift in Sources */,
 				F627AA3126591C9F0012462C /* User.swift in Sources */,
 				F6B6FBD5265817730064CAA8 /* TextManager.swift in Sources */,
+				F61190AF265E96080008F2AF /* StatisticalViewController.swift in Sources */,
 				CF78B7B8264C14DB0062F4A1 /* BaseTableViewCell.swift in Sources */,
 				CF78B7BB264C14DB0062F4A1 /* BaseAlertViewController.swift in Sources */,
 				CF78B826264C18860062F4A1 /* UIImage+Extension.swift in Sources */,
@@ -756,7 +775,6 @@
 				CF78B825264C18860062F4A1 /* UIView+Extension.swift in Sources */,
 				CF78B82A264C18860062F4A1 /* UICollectionView+Extension.swift in Sources */,
 				CF78B808264C18620062F4A1 /* Comparable+Clamp.swift in Sources */,
-				CF78B757264C0F590062F4A1 /* ViewController.swift in Sources */,
 				F6800BCA2659EF3D0020D39C /* EnterNewPWViewController.swift in Sources */,
 				F627AA2926591B630012462C /* APIService.swift in Sources */,
 				F6B6FBD22658161C0064CAA8 /* UserManager.swift in Sources */,
@@ -764,6 +782,7 @@
 				CF78B7BC264C14DB0062F4A1 /* BaseCollectionViewCell.swift in Sources */,
 				CF78B7FE264C18620062F4A1 /* Int+Extension.swift in Sources */,
 				CF78B7FD264C18620062F4A1 /* Notification+Extension.swift in Sources */,
+				F61190AC265E95A60008F2AF /* ProductViewController.swift in Sources */,
 				CF78B832264C19390062F4A1 /* Dimension.swift in Sources */,
 				CF78B753264C0F590062F4A1 /* AppDelegate.swift in Sources */,
 				F627AA3826591DCD0012462C /* AppInfo.swift in Sources */,
@@ -781,6 +800,7 @@
 				CF78B82D264C18860062F4A1 /* UITextField+Extension.swift in Sources */,
 				F6800BC72659EF2F0020D39C /* VerifyOTPViewController.swift in Sources */,
 				CF78B802264C18620062F4A1 /* CGFloat+Additions.swift in Sources */,
+				F61190A9265E957F0008F2AF /* ManagerOrderViewController.swift in Sources */,
 				CF78B83C264C26760062F4A1 /* HomeViewController.swift in Sources */,
 				F6B650272656B839002EC4BC /* SignInViewController.swift in Sources */,
 				CF78B7C1264C14DB0062F4A1 /* ShimmerImageView.swift in Sources */,

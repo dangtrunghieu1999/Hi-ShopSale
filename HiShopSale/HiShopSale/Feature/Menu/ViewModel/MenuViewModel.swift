@@ -7,6 +7,22 @@
 
 import UIKit
 
+enum MenuType:Int {
+    case home       = 1
+    case product    = 2
+    case store      = 3
+    case plus       = 4
+    case order      = 5
+    case chat       = 6
+    case statistics = 7
+    case logout     = 8
+    
+    static func numberOfItems() -> Int {
+        return 8
+    }
+    
+}
+
 class MenuViewModel: NSObject {
     
     var menuImage: [UIImage?] = [ImageManager.icon_home,
