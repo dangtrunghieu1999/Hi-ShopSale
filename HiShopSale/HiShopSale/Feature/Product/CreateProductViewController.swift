@@ -113,6 +113,14 @@ class CreateProductViewController: BaseViewController {
         return textField
     }()
     
+    fileprivate lazy var addPhotoTitleLabel: UILabel = {
+        let label = UILabel()
+        label.text = TextManager.addPhoto.localized()
+        label.textAlignment = .left
+        label.font = UIFont.systemFont(ofSize: FontSize.h1.rawValue, weight: .semibold)
+        return label
+    }()
+    
     fileprivate lazy var listImageCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.minimumLineSpacing = 0
@@ -126,16 +134,14 @@ class CreateProductViewController: BaseViewController {
         return collectionView
     }()
     
-    private lazy var saveButton: UIButton = {
+    fileprivate lazy var createProductButton: UIButton = {
         let button = UIButton()
         button.setTitle(TextManager.create.localized(), for: .normal)
-        button.backgroundColor = UIColor.disable
-        button.isUserInteractionEnabled = false
-        button.setTitleColor(UIColor.white, for: .normal)
+        button.backgroundColor = UIColor.thirdColor
+        button.layer.cornerRadius = Dimension.shared.cornerRadiusSmall
         button.layer.masksToBounds = true
         return button
     }()
-    
     // MARK: - View LifeCycles
     
     override func viewDidLoad() {
@@ -144,6 +150,8 @@ class CreateProductViewController: BaseViewController {
         layoutScrollView()
         layoutCenterStackView()
         layoutItemStackView()
+        layoutListImageCollectionView()
+        layoutCreateProductButton()
     }
     
     private func layoutCenterStackView() {
@@ -169,6 +177,21 @@ class CreateProductViewController: BaseViewController {
         centerStackView.addArrangedSubview(guaranteePriceTextField)
         centerStackView.addArrangedSubview(tradeMarkTextField)
         centerStackView.addArrangedSubview(originProductTextField)
+        centerStackView.addArrangedSubview(addPhotoTitleLabel)
+    }
+    
+    private func layoutListImageCollectionView() {
+        centerStackView.addArrangedSubview(listImageCollectionView)
+        listImageCollectionView.snp.makeConstraints { (make) in
+            make.height.equalTo(imageCollectionViewHeight)
+        }
+    }
+    
+    private func layoutCreateProductButton() {
+        centerStackView.addArrangedSubview(createProductButton)
+        createProductButton.snp.makeConstraints { (make) in
+            make.height.equalTo(Dimension.shared.largeHeightButton)
+        }
     }
 }
 
@@ -178,17 +201,24 @@ extension CreateProductViewController: UICollectionViewDelegateFlowLayout {
 
 extension CreateProductViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return CreateProductViewController.defaultNumberImages
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: UploadImageCollectionViewCell = collectionView.dequeueReusableCell(for: indexPath)
+        cell.indexPath = indexPath
+        cell.delegate = self
         return cell
     }
-    
-    
 }
 
 extension CreateProductViewController: UICollectionViewDelegate {
     
+}
+
+// MARK: - UploadImageCollectionViewCellDelegate
+
+extension CreateProductViewController: UploadImageCollectionViewCellDelegate {
+    func didSelectDeleteButton(cell: UploadImageCollectionViewCell, at inexPath: IndexPath) {
+    }
 }

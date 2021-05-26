@@ -39,5 +39,6 @@ extension TextManager {
     static let inputOrigin                  = "Nhập xuất xứ"
 
     static let create                       = "Tạo mới"
+    static let addPhoto                     = "Thêm ảnh"
     
 }
