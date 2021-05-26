@@ -87,7 +87,7 @@ extension UIColor {
     }
     
     class var disable: UIColor {
-        return UIColor(hex: "#D8D8D8")
+        return UIColor(hex: "#F5F7F9")
     }
 
     class var tableBackground: UIColor {
@@ -123,7 +123,7 @@ extension UIColor {
     }
     
     class var blackColor: UIColor {
-        return UIColor(hex: "#565457")
+        return UIColor(hex: "#78838C")
     }
 }
 

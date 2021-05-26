@@ -13,6 +13,7 @@ class MenuViewController: BaseViewController {
     
     var isSlideInMenuPresented  = false
     lazy var slideInMenuPadding: CGFloat = self.view.frame.width * 0.30
+    var viewModel = MenuViewModel()
     
     // MARK: - UI Elements
     
@@ -70,9 +71,7 @@ class MenuViewController: BaseViewController {
             self.isSlideInMenuPresented.toggle()
         }
     }
-    
 }
-
 
 // MARK: - Layout
 
@@ -91,7 +90,7 @@ extension MenuViewController {
 
 extension MenuViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+        return 70
     }
 }
 
@@ -99,14 +98,15 @@ extension MenuViewController: UITableViewDelegate {
 
 extension MenuViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return viewModel.menuImage.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let row  = indexPath.row
         let cell: MenuTableViewCell = tableView.dequeueReusableCell(for: indexPath)
+        cell.configData(image: viewModel.menuImage[row],
+                        title: viewModel.menuTitle[row])
         cell.backgroundColor = UIColor.clear
         return cell
     }
 }
-
-

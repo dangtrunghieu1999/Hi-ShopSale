@@ -28,7 +28,8 @@ class ForgotPasswordViewController: BaseViewController {
         let textField = TitleTextField()
         textField.titleText   = TextManager.username.localized()
         textField.placeholder = TextManager.enterUsername.localized()
-        textField.addTarget(self, action: #selector(textFieldValueChange(_:)), for: .editingChanged)
+        textField.addTarget(self, action: #selector(textFieldValueChange(_:)),
+                            for: .editingChanged)
         textField.keyboardType = .numberPad
         return textField
     }()
@@ -39,7 +40,8 @@ class ForgotPasswordViewController: BaseViewController {
         button.backgroundColor = UIColor.disable
         button.layer.cornerRadius = Dimension.shared.cornerRadiusSmall
         button.layer.masksToBounds = true
-        button.addTarget(self, action: #selector(tapOnNextButton), for: .touchUpInside)
+        button.addTarget(self, action: #selector(tapOnNextButton),
+                         for: .touchUpInside)
         button.isUserInteractionEnabled = false
         return button
     }()
@@ -66,7 +68,8 @@ class ForgotPasswordViewController: BaseViewController {
     }
     
     @objc private func tapOnNextButton() {
-        
+        let vc = VerifyOTPViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }

@@ -73,6 +73,7 @@
 		CF78B846264C395B0062F4A1 /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF78B845264C395B0062F4A1 /* MenuManager.swift */; };
 		CF78B849264C3AC50062F4A1 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF78B848264C3AC50062F4A1 /* MenuTableViewCell.swift */; };
 		EC5BCEFF3334EBF26F198900 /* Pods_HiShopSale.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756F86D88DC855CBDC7F0360 /* Pods_HiShopSale.framework */; };
+		F61190A3265E8D4F0008F2AF /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61190A2265E8D4F0008F2AF /* MenuViewModel.swift */; };
 		F627AA0E2659133C0012462C /* BaseTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627AA0D2659133C0012462C /* BaseTextView.swift */; };
 		F627AA1E26591B160012462C /* District.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627AA1B26591B160012462C /* District.swift */; };
 		F627AA1F26591B160012462C /* Province.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627AA1C26591B160012462C /* Province.swift */; };
@@ -166,6 +167,7 @@
 		CF78B841264C39300062F4A1 /* OrderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderManager.swift; sourceTree = "<group>"; };
 		CF78B845264C395B0062F4A1 /* MenuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
 		CF78B848264C3AC50062F4A1 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		F61190A2265E8D4F0008F2AF /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
 		F627AA0D2659133C0012462C /* BaseTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextView.swift; sourceTree = "<group>"; };
 		F627AA1B26591B160012462C /* District.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = District.swift; sourceTree = "<group>"; };
 		F627AA1C26591B160012462C /* Province.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Province.swift; sourceTree = "<group>"; };
@@ -451,6 +453,7 @@
 		CF78B7EA264C18090062F4A1 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				F61190A1265E8CBE0008F2AF /* ViewModel */,
 				CF78B7EB264C18150062F4A1 /* MenuViewController.swift */,
 				CF78B83B264C26760062F4A1 /* HomeViewController.swift */,
 				CF78B848264C3AC50062F4A1 /* MenuTableViewCell.swift */,
@@ -479,6 +482,14 @@
 				CF78B81E264C18860062F4A1 /* UITableView+Extension.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		F61190A1265E8CBE0008F2AF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F61190A2265E8D4F0008F2AF /* MenuViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		F627AA092658FE890012462C /* EnterNewPW */ = {
@@ -706,6 +717,7 @@
 				CF78B7C4264C14DB0062F4A1 /* TitleAndContent.swift in Sources */,
 				CF78B7B9264C14DB0062F4A1 /* BaseCollectionViewHeaderFooterCell.swift in Sources */,
 				F627AA2C26591B630012462C /* APIConfig.swift in Sources */,
+				F61190A3265E8D4F0008F2AF /* MenuViewModel.swift in Sources */,
 				CF78B7E4264C17CB0062F4A1 /* InfoShopViewController.swift in Sources */,
 				CF78B7BE264C14DB0062F4A1 /* ShimmerButton.swift in Sources */,
 				CF78B804264C18620062F4A1 /* UserDefault+Extension.swift in Sources */,

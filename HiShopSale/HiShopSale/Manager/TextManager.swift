@@ -30,6 +30,7 @@ extension TextManager {
     static let enterUsername                        = "Nhập số điện thoại"
     static let password                             = "Mật khẩu"
     static let enterPassword                        = "Nhập mật khẩu"
+    static let changePassword                       = "Đổi mật khẩu"
     static let forgotPassword                       = "Quên mật khẩu"
     static let welcomeShop                          = "Chào mừng bạn đến Hi Shop"
     static let forgotPW                             = "Quên mật khẩu"
@@ -44,4 +45,6 @@ extension TextManager {
     static let resendCodeAgain                      = "Bạn không nhận được mã code?"
     static let againCode                            = "Thử lại"
     static let verifyCode                           = "Xác thực tài khoản"
+    static let createNewPW                          = "Tạo mật khẩu mới"
+    static let confirmPW                            = "Nhập lại mật khẩu"
 }

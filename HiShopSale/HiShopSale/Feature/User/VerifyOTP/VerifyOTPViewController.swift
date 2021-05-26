@@ -41,6 +41,8 @@ class VerifyOTPViewController: BaseViewController {
         textField.layer.borderWidth = 1
         textField.layer.cornerRadius = Dimension.shared.conerRadiusMedium
         textField.layer.masksToBounds = true
+        textField.addTarget(self, action: #selector(textFieldValueChange(_:)),
+                            for: .editingChanged)
         textField.keyboardType = .numberPad
         return textField
     }()
@@ -60,7 +62,8 @@ class VerifyOTPViewController: BaseViewController {
         button.titleLabel?.font = UIFont.systemFont(ofSize: FontSize.h1.rawValue)
         button.backgroundColor = UIColor.clear
         button.setTitleColor(UIColor.second, for: .normal)
-        button.addTarget(self, action: #selector(tapOnResendCode), for: .touchUpInside)
+        button.addTarget(self, action: #selector(tapOnResendCode),
+                         for: .touchUpInside)
         return button
     }()
     
@@ -70,7 +73,8 @@ class VerifyOTPViewController: BaseViewController {
         button.backgroundColor = UIColor.disable
         button.layer.cornerRadius = Dimension.shared.cornerRadiusSmall
         button.layer.masksToBounds = true
-        button.addTarget(self, action: #selector(tapOnNextButton), for: .touchUpInside)
+        button.addTarget(self, action: #selector(tapOnNextButton),
+                         for: .touchUpInside)
         button.isUserInteractionEnabled = false
         return button
     }()
@@ -91,13 +95,25 @@ class VerifyOTPViewController: BaseViewController {
     }
     
     @objc private func tapOnNextButton() {
-        
+        let vc = EnterNewPWViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc private func tapOnResendCode() {
         
     }
     
+    @objc private func textFieldValueChange(_ textField: UITextField) {
+        guard let code = enterCodeTextField.text else { return }
+        
+        if code != ""{
+            self.nextButton.isUserInteractionEnabled = true
+            self.nextButton.backgroundColor = UIColor.primary
+        } else {
+            self.nextButton.backgroundColor = UIColor.disable
+            self.nextButton.isUserInteractionEnabled = false
+        }
+    }
 }
 
 // MARK: - Layout
@@ -112,6 +128,7 @@ extension VerifyOTPViewController {
             make.right.equalToSuperview()
                 .inset(dimension.normalMargin)
             make.centerY.equalToSuperview()
+                .offset(Dimension.shared.largeMargin_120)
         }
     }
     
