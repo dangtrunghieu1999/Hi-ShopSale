@@ -94,6 +94,86 @@
 		F627AA3126591C9F0012462C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627AA3026591C9F0012462C /* User.swift */; };
 		F627AA3526591D1A0012462C /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627AA3426591D1A0012462C /* AlertManager.swift */; };
 		F627AA3826591DCD0012462C /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627AA3726591DCD0012462C /* AppInfo.swift */; };
+		F67FB490265F17470076D3D6 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB48F265F17470076D3D6 /* AppRouter.swift */; };
+		F67FB4B3265F18170076D3D6 /* SlideDownDismissingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB496265F18150076D3D6 /* SlideDownDismissingAnimator.swift */; };
+		F67FB4B4265F18170076D3D6 /* GalleryVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB497265F18150076D3D6 /* GalleryVideoCell.swift */; };
+		F67FB4B5265F18170076D3D6 /* LiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB498265F18150076D3D6 /* LiveView.swift */; };
+		F67FB4B6265F18170076D3D6 /* SlideUpPresentingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB499265F18150076D3D6 /* SlideUpPresentingAnimator.swift */; };
+		F67FB4B7265F18170076D3D6 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB49A265F18150076D3D6 /* PhotoDetailViewController.swift */; };
+		F67FB4B8265F18170076D3D6 /* CameraCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB49B265F18150076D3D6 /* CameraCompatible.swift */; };
+		F67FB4B9265F18170076D3D6 /* UINavigationController+ImagePickerConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB49C265F18150076D3D6 /* UINavigationController+ImagePickerConfigurable.swift */; };
+		F67FB4BA265F18170076D3D6 /* PhotoAlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB49D265F18150076D3D6 /* PhotoAlbumsViewController.swift */; };
+		F67FB4BB265F18170076D3D6 /* UIFont+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB49E265F18150076D3D6 /* UIFont+Style.swift */; };
+		F67FB4BC265F18170076D3D6 /* ImagePickerControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB49F265F18160076D3D6 /* ImagePickerControllerDelegate.swift */; };
+		F67FB4BD265F18170076D3D6 /* PhotoGalleryCameraCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4A0265F18160076D3D6 /* PhotoGalleryCameraCell.swift */; };
+		F67FB4BE265F18170076D3D6 /* ImagePickerParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4A1265F18160076D3D6 /* ImagePickerParameters.swift */; };
+		F67FB4BF265F18170076D3D6 /* PhotoGalleryTagLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4A2265F18160076D3D6 /* PhotoGalleryTagLabel.swift */; };
+		F67FB4C0265F18170076D3D6 /* PhotoAlbumTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4A3265F18160076D3D6 /* PhotoAlbumTitleButton.swift */; };
+		F67FB4C1265F18170076D3D6 /* PhotoGalleryLiveViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4A4265F18160076D3D6 /* PhotoGalleryLiveViewCell.swift */; };
+		F67FB4C2265F18170076D3D6 /* VideoPropertyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4A5265F18160076D3D6 /* VideoPropertyView.swift */; };
+		F67FB4C3265F18170076D3D6 /* SlideUpPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4A6265F18160076D3D6 /* SlideUpPresentationController.swift */; };
+		F67FB4C4265F18170076D3D6 /* PhotoGalleryViewController+UIViewControllerPreviewing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4A7265F18160076D3D6 /* PhotoGalleryViewController+UIViewControllerPreviewing.swift */; };
+		F67FB4C5265F18170076D3D6 /* PhotoAlbumsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4A8265F18160076D3D6 /* PhotoAlbumsTableView.swift */; };
+		F67FB4C6265F18170076D3D6 /* SlideUpPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4A9265F18160076D3D6 /* SlideUpPresentation.swift */; };
+		F67FB4C7265F18170076D3D6 /* PhotoGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4AA265F18160076D3D6 /* PhotoGalleryViewController.swift */; };
+		F67FB4C8265F18170076D3D6 /* ImagePickerConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4AB265F18160076D3D6 /* ImagePickerConfigurable.swift */; };
+		F67FB4C9265F18170076D3D6 /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4AC265F18160076D3D6 /* ImagePickerController.swift */; };
+		F67FB4CA265F18170076D3D6 /* PhotoAlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4AD265F18170076D3D6 /* PhotoAlbumCell.swift */; };
+		F67FB4CB265F18170076D3D6 /* CameraSessionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4AE265F18170076D3D6 /* CameraSessionHandler.swift */; };
+		F67FB4CC265F18170076D3D6 /* UIColor+Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4AF265F18170076D3D6 /* UIColor+Palette.swift */; };
+		F67FB4CD265F18170076D3D6 /* PhotoGalleryCameraIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4B0265F18170076D3D6 /* PhotoGalleryCameraIconView.swift */; };
+		F67FB4CE265F18170076D3D6 /* PhotoGalleryHintLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4B1265F18170076D3D6 /* PhotoGalleryHintLabel.swift */; };
+		F67FB4CF265F18170076D3D6 /* GalleryPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4B2265F18170076D3D6 /* GalleryPhotoCell.swift */; };
+		F67FB4DB265F187F0076D3D6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F67FB4D2265F187F0076D3D6 /* Localizable.strings */; };
+		F67FB4DC265F187F0076D3D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F67FB4D9265F187F0076D3D6 /* Images.xcassets */; };
+		F67FB4E6265F18B70076D3D6 /* TagsStyleFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4DF265F18B70076D3D6 /* TagsStyleFlowLayout.swift */; };
+		F67FB4E7265F18B70076D3D6 /* ContentDynamicLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4E0265F18B70076D3D6 /* ContentDynamicLayout.swift */; };
+		F67FB4E8265F18B70076D3D6 /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4E2265F18B70076D3D6 /* FLAnimatedImage.m */; };
+		F67FB4E9265F18B70076D3D6 /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4E3265F18B70076D3D6 /* FLAnimatedImageView.m */; };
+		F67FB53C265F18DC0076D3D6 /* ACTabScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4ED265F18DB0076D3D6 /* ACTabScrollView.swift */; };
+		F67FB53D265F18DC0076D3D6 /* ACTabScrollView+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4EE265F18DB0076D3D6 /* ACTabScrollView+Protocol.swift */; };
+		F67FB53E265F18DC0076D3D6 /* CAPSPageMenu+UIGestureRecognizerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4F0265F18DB0076D3D6 /* CAPSPageMenu+UIGestureRecognizerDelegate.swift */; };
+		F67FB53F265F18DC0076D3D6 /* CAPSPageMenu+Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4F1265F18DB0076D3D6 /* CAPSPageMenu+Options.swift */; };
+		F67FB540265F18DC0076D3D6 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4F2265F18DB0076D3D6 /* MenuItemView.swift */; };
+		F67FB541265F18DC0076D3D6 /* CAPSPageMenu+UIScrollViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4F3265F18DB0076D3D6 /* CAPSPageMenu+UIScrollViewDelegate.swift */; };
+		F67FB542265F18DC0076D3D6 /* CAPSPageMenu+UIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4F4265F18DB0076D3D6 /* CAPSPageMenu+UIConfiguration.swift */; };
+		F67FB543265F18DC0076D3D6 /* CAPSPageMenuConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4F5265F18DB0076D3D6 /* CAPSPageMenuConfiguration.swift */; };
+		F67FB544265F18DC0076D3D6 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4F6265F18DB0076D3D6 /* CAPSPageMenu.swift */; };
+		F67FB545265F18DC0076D3D6 /* HeaderedCAPSPageMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4F9265F18DB0076D3D6 /* HeaderedCAPSPageMenuViewController.swift */; };
+		F67FB546265F18DC0076D3D6 /* AbstractHeaderedTabScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4FB265F18DB0076D3D6 /* AbstractHeaderedTabScrollViewController.swift */; };
+		F67FB547265F18DC0076D3D6 /* ImageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB4FD265F18DB0076D3D6 /* ImageScrollView.swift */; };
+		F67FB548265F18DC0076D3D6 /* NIAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F67FB503265F18DC0076D3D6 /* NIAttributedLabel.m */; };
+		F67FB549265F18DC0076D3D6 /* NSMutableAttributedString+NimbusAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F67FB504265F18DC0076D3D6 /* NSMutableAttributedString+NimbusAttributedLabel.m */; };
+		F67FB54A265F18DC0076D3D6 /* NICommonMetrics.m in Sources */ = {isa = PBXBuildFile; fileRef = F67FB507265F18DC0076D3D6 /* NICommonMetrics.m */; };
+		F67FB54B265F18DC0076D3D6 /* NIViewRecycler.m in Sources */ = {isa = PBXBuildFile; fileRef = F67FB508265F18DC0076D3D6 /* NIViewRecycler.m */; };
+		F67FB54C265F18DC0076D3D6 /* NIOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = F67FB50C265F18DC0076D3D6 /* NIOperations.m */; };
+		F67FB54D265F18DC0076D3D6 /* NINetworkActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = F67FB50E265F18DC0076D3D6 /* NINetworkActivity.m */; };
+		F67FB54E265F18DC0076D3D6 /* NIDeviceOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = F67FB510265F18DC0076D3D6 /* NIDeviceOrientation.m */; };
+		F67FB54F265F18DC0076D3D6 /* NIError.m in Sources */ = {isa = PBXBuildFile; fileRef = F67FB515265F18DC0076D3D6 /* NIError.m */; };
+		F67FB550265F18DC0076D3D6 /* UIResponder+NimbusCore.m in Sources */ = {isa = PBXBuildFile; fileRef = F67FB516265F18DC0076D3D6 /* UIResponder+NimbusCore.m */; };
+		F67FB551265F18DC0076D3D6 /* NINonRetainingCollections.m in Sources */ = {isa = PBXBuildFile; fileRef = F67FB51A265F18DC0076D3D6 /* NINonRetainingCollections.m */; };
+		F67FB552265F18DC0076D3D6 /* NIRuntimeClassModifications.m in Sources */ = {isa = PBXBuildFile; fileRef = F67FB51C265F18DC0076D3D6 /* NIRuntimeClassModifications.m */; };
+		F67FB553265F18DC0076D3D6 /* NIButtonUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F67FB51E265F18DC0076D3D6 /* NIButtonUtilities.m */; };
+		F67FB554265F18DC0076D3D6 /* NINonEmptyCollectionTesting.m in Sources */ = {isa = PBXBuildFile; fileRef = F67FB521265F18DC0076D3D6 /* NINonEmptyCollectionTesting.m */; };
+		F67FB555265F18DC0076D3D6 /* NIState.m in Sources */ = {isa = PBXBuildFile; fileRef = F67FB523265F18DC0076D3D6 /* NIState.m */; };
+		F67FB556265F18DC0076D3D6 /* NIImageUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F67FB525265F18DC0076D3D6 /* NIImageUtilities.m */; };
+		F67FB557265F18DC0076D3D6 /* NIPaths.m in Sources */ = {isa = PBXBuildFile; fileRef = F67FB526265F18DC0076D3D6 /* NIPaths.m */; };
+		F67FB558265F18DC0076D3D6 /* NIFoundationMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = F67FB527265F18DC0076D3D6 /* NIFoundationMethods.m */; };
+		F67FB559265F18DC0076D3D6 /* NIDebuggingTools.m in Sources */ = {isa = PBXBuildFile; fileRef = F67FB529265F18DC0076D3D6 /* NIDebuggingTools.m */; };
+		F67FB55A265F18DC0076D3D6 /* NIInMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F67FB52A265F18DC0076D3D6 /* NIInMemoryCache.m */; };
+		F67FB55B265F18DC0076D3D6 /* NIActions.m in Sources */ = {isa = PBXBuildFile; fileRef = F67FB52D265F18DC0076D3D6 /* NIActions.m */; };
+		F67FB55C265F18DC0076D3D6 /* NISnapshotRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F67FB52E265F18DC0076D3D6 /* NISnapshotRotation.m */; };
+		F67FB55D265F18DC0076D3D6 /* NISDKAvailability.m in Sources */ = {isa = PBXBuildFile; fileRef = F67FB52F265F18DC0076D3D6 /* NISDKAvailability.m */; };
+		F67FB55E265F18DC0076D3D6 /* ImageCropperConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB534265F18DC0076D3D6 /* ImageCropperConfiguration.swift */; };
+		F67FB55F265F18DC0076D3D6 /* ImageCropperConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB535265F18DC0076D3D6 /* ImageCropperConfigurator.swift */; };
+		F67FB560265F18DC0076D3D6 /* ImageCropperModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB536265F18DC0076D3D6 /* ImageCropperModel.swift */; };
+		F67FB561265F18DC0076D3D6 /* ImageCropperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB537265F18DC0076D3D6 /* ImageCropperViewController.swift */; };
+		F67FB562265F18DC0076D3D6 /* ImageCropperPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB538265F18DC0076D3D6 /* ImageCropperPresenter.swift */; };
+		F67FB563265F18DC0076D3D6 /* ImageCropper.xib in Resources */ = {isa = PBXBuildFile; fileRef = F67FB539265F18DC0076D3D6 /* ImageCropper.xib */; };
+		F67FB564265F18DC0076D3D6 /* UIImage+NormalizeOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB53A265F18DC0076D3D6 /* UIImage+NormalizeOrientation.swift */; };
+		F67FB565265F18DC0076D3D6 /* ImageCropperRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB53B265F18DC0076D3D6 /* ImageCropperRouter.swift */; };
+		F67FB56B265F1AA20076D3D6 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB56A265F1AA20076D3D6 /* Product.swift */; };
+		F67FB56E265F1B0F0076D3D6 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB56D265F1B0F0076D3D6 /* Comment.swift */; };
 		F6800BC72659EF2F0020D39C /* VerifyOTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6800BC62659EF2F0020D39C /* VerifyOTPViewController.swift */; };
 		F6800BCA2659EF3D0020D39C /* EnterNewPWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6800BC92659EF3D0020D39C /* EnterNewPWViewController.swift */; };
 		F6831CEC2658B06400066171 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6831CEB2658B06400066171 /* ForgotPasswordViewController.swift */; };
@@ -195,6 +275,125 @@
 		F627AA3026591C9F0012462C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F627AA3426591D1A0012462C /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		F627AA3726591DCD0012462C /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
+		F67FB48F265F17470076D3D6 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		F67FB496265F18150076D3D6 /* SlideDownDismissingAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideDownDismissingAnimator.swift; sourceTree = "<group>"; };
+		F67FB497265F18150076D3D6 /* GalleryVideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryVideoCell.swift; sourceTree = "<group>"; };
+		F67FB498265F18150076D3D6 /* LiveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveView.swift; sourceTree = "<group>"; };
+		F67FB499265F18150076D3D6 /* SlideUpPresentingAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideUpPresentingAnimator.swift; sourceTree = "<group>"; };
+		F67FB49A265F18150076D3D6 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
+		F67FB49B265F18150076D3D6 /* CameraCompatible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraCompatible.swift; sourceTree = "<group>"; };
+		F67FB49C265F18150076D3D6 /* UINavigationController+ImagePickerConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+ImagePickerConfigurable.swift"; sourceTree = "<group>"; };
+		F67FB49D265F18150076D3D6 /* PhotoAlbumsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAlbumsViewController.swift; sourceTree = "<group>"; };
+		F67FB49E265F18150076D3D6 /* UIFont+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Style.swift"; sourceTree = "<group>"; };
+		F67FB49F265F18160076D3D6 /* ImagePickerControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerControllerDelegate.swift; sourceTree = "<group>"; };
+		F67FB4A0265F18160076D3D6 /* PhotoGalleryCameraCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGalleryCameraCell.swift; sourceTree = "<group>"; };
+		F67FB4A1265F18160076D3D6 /* ImagePickerParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerParameters.swift; sourceTree = "<group>"; };
+		F67FB4A2265F18160076D3D6 /* PhotoGalleryTagLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGalleryTagLabel.swift; sourceTree = "<group>"; };
+		F67FB4A3265F18160076D3D6 /* PhotoAlbumTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAlbumTitleButton.swift; sourceTree = "<group>"; };
+		F67FB4A4265F18160076D3D6 /* PhotoGalleryLiveViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGalleryLiveViewCell.swift; sourceTree = "<group>"; };
+		F67FB4A5265F18160076D3D6 /* VideoPropertyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPropertyView.swift; sourceTree = "<group>"; };
+		F67FB4A6265F18160076D3D6 /* SlideUpPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideUpPresentationController.swift; sourceTree = "<group>"; };
+		F67FB4A7265F18160076D3D6 /* PhotoGalleryViewController+UIViewControllerPreviewing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhotoGalleryViewController+UIViewControllerPreviewing.swift"; sourceTree = "<group>"; };
+		F67FB4A8265F18160076D3D6 /* PhotoAlbumsTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAlbumsTableView.swift; sourceTree = "<group>"; };
+		F67FB4A9265F18160076D3D6 /* SlideUpPresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideUpPresentation.swift; sourceTree = "<group>"; };
+		F67FB4AA265F18160076D3D6 /* PhotoGalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGalleryViewController.swift; sourceTree = "<group>"; };
+		F67FB4AB265F18160076D3D6 /* ImagePickerConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerConfigurable.swift; sourceTree = "<group>"; };
+		F67FB4AC265F18160076D3D6 /* ImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
+		F67FB4AD265F18170076D3D6 /* PhotoAlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAlbumCell.swift; sourceTree = "<group>"; };
+		F67FB4AE265F18170076D3D6 /* CameraSessionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraSessionHandler.swift; sourceTree = "<group>"; };
+		F67FB4AF265F18170076D3D6 /* UIColor+Palette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Palette.swift"; sourceTree = "<group>"; };
+		F67FB4B0265F18170076D3D6 /* PhotoGalleryCameraIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGalleryCameraIconView.swift; sourceTree = "<group>"; };
+		F67FB4B1265F18170076D3D6 /* PhotoGalleryHintLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGalleryHintLabel.swift; sourceTree = "<group>"; };
+		F67FB4B2265F18170076D3D6 /* GalleryPhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryPhotoCell.swift; sourceTree = "<group>"; };
+		F67FB4D3265F187F0076D3D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F67FB4D4265F187F0076D3D6 /* zh-Hant-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant-HK"; path = "zh-Hant-HK.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		F67FB4D5265F187F0076D3D6 /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F67FB4D6265F187F0076D3D6 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F67FB4D7265F187F0076D3D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F67FB4D8265F187F0076D3D6 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		F67FB4D9265F187F0076D3D6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F67FB4DA265F187F0076D3D6 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F67FB4DF265F18B70076D3D6 /* TagsStyleFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagsStyleFlowLayout.swift; sourceTree = "<group>"; };
+		F67FB4E0265F18B70076D3D6 /* ContentDynamicLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentDynamicLayout.swift; sourceTree = "<group>"; };
+		F67FB4E2265F18B70076D3D6 /* FLAnimatedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImage.m; sourceTree = "<group>"; };
+		F67FB4E3265F18B70076D3D6 /* FLAnimatedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImageView.m; sourceTree = "<group>"; };
+		F67FB4E4265F18B70076D3D6 /* FLAnimatedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImage.h; sourceTree = "<group>"; };
+		F67FB4E5265F18B70076D3D6 /* FLAnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImageView.h; sourceTree = "<group>"; };
+		F67FB4ED265F18DB0076D3D6 /* ACTabScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACTabScrollView.swift; sourceTree = "<group>"; };
+		F67FB4EE265F18DB0076D3D6 /* ACTabScrollView+Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ACTabScrollView+Protocol.swift"; sourceTree = "<group>"; };
+		F67FB4F0265F18DB0076D3D6 /* CAPSPageMenu+UIGestureRecognizerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAPSPageMenu+UIGestureRecognizerDelegate.swift"; sourceTree = "<group>"; };
+		F67FB4F1265F18DB0076D3D6 /* CAPSPageMenu+Options.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAPSPageMenu+Options.swift"; sourceTree = "<group>"; };
+		F67FB4F2265F18DB0076D3D6 /* MenuItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
+		F67FB4F3265F18DB0076D3D6 /* CAPSPageMenu+UIScrollViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAPSPageMenu+UIScrollViewDelegate.swift"; sourceTree = "<group>"; };
+		F67FB4F4265F18DB0076D3D6 /* CAPSPageMenu+UIConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAPSPageMenu+UIConfiguration.swift"; sourceTree = "<group>"; };
+		F67FB4F5265F18DB0076D3D6 /* CAPSPageMenuConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenuConfiguration.swift; sourceTree = "<group>"; };
+		F67FB4F6265F18DB0076D3D6 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
+		F67FB4F9265F18DB0076D3D6 /* HeaderedCAPSPageMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderedCAPSPageMenuViewController.swift; sourceTree = "<group>"; };
+		F67FB4FB265F18DB0076D3D6 /* AbstractHeaderedTabScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractHeaderedTabScrollViewController.swift; sourceTree = "<group>"; };
+		F67FB4FD265F18DB0076D3D6 /* ImageScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageScrollView.swift; sourceTree = "<group>"; };
+		F67FB4FF265F18DC0076D3D6 /* NimbusAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NimbusAttributedLabel.h; sourceTree = "<group>"; };
+		F67FB500265F18DC0076D3D6 /* NIAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIAttributedLabel.h; sourceTree = "<group>"; };
+		F67FB501265F18DC0076D3D6 /* NSMutableAttributedString+NimbusAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+NimbusAttributedLabel.h"; sourceTree = "<group>"; };
+		F67FB502265F18DC0076D3D6 /* NIAttributedLabel+Testing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NIAttributedLabel+Testing.h"; sourceTree = "<group>"; };
+		F67FB503265F18DC0076D3D6 /* NIAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIAttributedLabel.m; sourceTree = "<group>"; };
+		F67FB504265F18DC0076D3D6 /* NSMutableAttributedString+NimbusAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+NimbusAttributedLabel.m"; sourceTree = "<group>"; };
+		F67FB506265F18DC0076D3D6 /* NINonEmptyCollectionTesting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NINonEmptyCollectionTesting.h; sourceTree = "<group>"; };
+		F67FB507265F18DC0076D3D6 /* NICommonMetrics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NICommonMetrics.m; sourceTree = "<group>"; };
+		F67FB508265F18DC0076D3D6 /* NIViewRecycler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIViewRecycler.m; sourceTree = "<group>"; };
+		F67FB509265F18DC0076D3D6 /* NIPreprocessorMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIPreprocessorMacros.h; sourceTree = "<group>"; };
+		F67FB50A265F18DC0076D3D6 /* NIButtonUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIButtonUtilities.h; sourceTree = "<group>"; };
+		F67FB50B265F18DC0076D3D6 /* NIRuntimeClassModifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIRuntimeClassModifications.h; sourceTree = "<group>"; };
+		F67FB50C265F18DC0076D3D6 /* NIOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIOperations.m; sourceTree = "<group>"; };
+		F67FB50D265F18DC0076D3D6 /* NIState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIState.h; sourceTree = "<group>"; };
+		F67FB50E265F18DC0076D3D6 /* NINetworkActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NINetworkActivity.m; sourceTree = "<group>"; };
+		F67FB50F265F18DC0076D3D6 /* NIDebuggingTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIDebuggingTools.h; sourceTree = "<group>"; };
+		F67FB510265F18DC0076D3D6 /* NIDeviceOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIDeviceOrientation.m; sourceTree = "<group>"; };
+		F67FB511265F18DC0076D3D6 /* NimbusCore+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NimbusCore+Additions.h"; sourceTree = "<group>"; };
+		F67FB512265F18DC0076D3D6 /* NIFoundationMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIFoundationMethods.h; sourceTree = "<group>"; };
+		F67FB513265F18DC0076D3D6 /* NIPaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIPaths.h; sourceTree = "<group>"; };
+		F67FB514265F18DC0076D3D6 /* NIImageUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIImageUtilities.h; sourceTree = "<group>"; };
+		F67FB515265F18DC0076D3D6 /* NIError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIError.m; sourceTree = "<group>"; };
+		F67FB516265F18DC0076D3D6 /* UIResponder+NimbusCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+NimbusCore.m"; sourceTree = "<group>"; };
+		F67FB517265F18DC0076D3D6 /* NISDKAvailability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NISDKAvailability.h; sourceTree = "<group>"; };
+		F67FB518265F18DC0076D3D6 /* NISnapshotRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NISnapshotRotation.h; sourceTree = "<group>"; };
+		F67FB519265F18DC0076D3D6 /* NIActions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIActions.h; sourceTree = "<group>"; };
+		F67FB51A265F18DC0076D3D6 /* NINonRetainingCollections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NINonRetainingCollections.m; sourceTree = "<group>"; };
+		F67FB51B265F18DC0076D3D6 /* NIInMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIInMemoryCache.h; sourceTree = "<group>"; };
+		F67FB51C265F18DC0076D3D6 /* NIRuntimeClassModifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIRuntimeClassModifications.m; sourceTree = "<group>"; };
+		F67FB51D265F18DC0076D3D6 /* NimbusCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NimbusCore.h; sourceTree = "<group>"; };
+		F67FB51E265F18DC0076D3D6 /* NIButtonUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIButtonUtilities.m; sourceTree = "<group>"; };
+		F67FB51F265F18DC0076D3D6 /* NIViewRecycler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIViewRecycler.h; sourceTree = "<group>"; };
+		F67FB520265F18DC0076D3D6 /* NICommonMetrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NICommonMetrics.h; sourceTree = "<group>"; };
+		F67FB521265F18DC0076D3D6 /* NINonEmptyCollectionTesting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NINonEmptyCollectionTesting.m; sourceTree = "<group>"; };
+		F67FB522265F18DC0076D3D6 /* NINetworkActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NINetworkActivity.h; sourceTree = "<group>"; };
+		F67FB523265F18DC0076D3D6 /* NIState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIState.m; sourceTree = "<group>"; };
+		F67FB524265F18DC0076D3D6 /* NIOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIOperations.h; sourceTree = "<group>"; };
+		F67FB525265F18DC0076D3D6 /* NIImageUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIImageUtilities.m; sourceTree = "<group>"; };
+		F67FB526265F18DC0076D3D6 /* NIPaths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIPaths.m; sourceTree = "<group>"; };
+		F67FB527265F18DC0076D3D6 /* NIFoundationMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIFoundationMethods.m; sourceTree = "<group>"; };
+		F67FB528265F18DC0076D3D6 /* NIDeviceOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIDeviceOrientation.h; sourceTree = "<group>"; };
+		F67FB529265F18DC0076D3D6 /* NIDebuggingTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIDebuggingTools.m; sourceTree = "<group>"; };
+		F67FB52A265F18DC0076D3D6 /* NIInMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIInMemoryCache.m; sourceTree = "<group>"; };
+		F67FB52B265F18DC0076D3D6 /* NIOperations+Subclassing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NIOperations+Subclassing.h"; sourceTree = "<group>"; };
+		F67FB52C265F18DC0076D3D6 /* NINonRetainingCollections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NINonRetainingCollections.h; sourceTree = "<group>"; };
+		F67FB52D265F18DC0076D3D6 /* NIActions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIActions.m; sourceTree = "<group>"; };
+		F67FB52E265F18DC0076D3D6 /* NISnapshotRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NISnapshotRotation.m; sourceTree = "<group>"; };
+		F67FB52F265F18DC0076D3D6 /* NISDKAvailability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NISDKAvailability.m; sourceTree = "<group>"; };
+		F67FB530265F18DC0076D3D6 /* UIResponder+NimbusCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+NimbusCore.h"; sourceTree = "<group>"; };
+		F67FB531265F18DC0076D3D6 /* NIError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIError.h; sourceTree = "<group>"; };
+		F67FB532265F18DC0076D3D6 /* NIActions+Subclassing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NIActions+Subclassing.h"; sourceTree = "<group>"; };
+		F67FB534265F18DC0076D3D6 /* ImageCropperConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCropperConfiguration.swift; sourceTree = "<group>"; };
+		F67FB535265F18DC0076D3D6 /* ImageCropperConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCropperConfigurator.swift; sourceTree = "<group>"; };
+		F67FB536265F18DC0076D3D6 /* ImageCropperModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCropperModel.swift; sourceTree = "<group>"; };
+		F67FB537265F18DC0076D3D6 /* ImageCropperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCropperViewController.swift; sourceTree = "<group>"; };
+		F67FB538265F18DC0076D3D6 /* ImageCropperPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCropperPresenter.swift; sourceTree = "<group>"; };
+		F67FB539265F18DC0076D3D6 /* ImageCropper.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCropper.xib; sourceTree = "<group>"; };
+		F67FB53A265F18DC0076D3D6 /* UIImage+NormalizeOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+NormalizeOrientation.swift"; sourceTree = "<group>"; };
+		F67FB53B265F18DC0076D3D6 /* ImageCropperRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCropperRouter.swift; sourceTree = "<group>"; };
+		F67FB567265F18F10076D3D6 /* ZoZoApp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZoZoApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		F67FB568265F18F10076D3D6 /* TikiApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TikiApp.h; sourceTree = "<group>"; };
+		F67FB56A265F1AA20076D3D6 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		F67FB56D265F1B0F0076D3D6 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		F6800BC62659EF2F0020D39C /* VerifyOTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyOTPViewController.swift; sourceTree = "<group>"; };
 		F6800BC92659EF3D0020D39C /* EnterNewPWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNewPWViewController.swift; sourceTree = "<group>"; };
 		F6831CEB2658B06400066171 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
@@ -270,6 +469,7 @@
 		CF78B78C264C0FF70062F4A1 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				F67FB493265F179C0076D3D6 /* ThirtParty */,
 				CF78B752264C0F590062F4A1 /* AppDelegate.swift */,
 				CF78B75B264C0F5A0062F4A1 /* Assets.xcassets */,
 				CF78B75D264C0F5A0062F4A1 /* LaunchScreen.storyboard */,
@@ -322,6 +522,7 @@
 				F627AA2726591B630012462C /* EndPointType.swift */,
 				F627AA2226591B620012462C /* NetworkLogger.swift */,
 				F627AA2526591B620012462C /* ServiceErrorAPI.swift */,
+				F67FB48F265F17470076D3D6 /* AppRouter.swift */,
 			);
 			path = APIService;
 			sourceTree = "<group>";
@@ -381,6 +582,8 @@
 		CF78B79A264C11A80062F4A1 /* Product */ = {
 			isa = PBXGroup;
 			children = (
+				F67FB56D265F1B0F0076D3D6 /* Comment.swift */,
+				F67FB56A265F1AA20076D3D6 /* Product.swift */,
 				F61190D2265EB0B10008F2AF /* UploadImageCollectionViewCell.swift */,
 				F61190AB265E95A60008F2AF /* ProductViewController.swift */,
 				F61190C7265EA1320008F2AF /* CreateProductViewController.swift */,
@@ -555,6 +758,235 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		F67FB493265F179C0076D3D6 /* ThirtParty */ = {
+			isa = PBXGroup;
+			children = (
+				F67FB568265F18F10076D3D6 /* TikiApp.h */,
+				F67FB567265F18F10076D3D6 /* ZoZoApp-Bridging-Header.h */,
+				F67FB533265F18DC0076D3D6 /* ImageCroper */,
+				F67FB4FC265F18DB0076D3D6 /* ImageScrollView */,
+				F67FB4FE265F18DC0076D3D6 /* NIAttributedLabel */,
+				F67FB505265F18DC0076D3D6 /* NICore */,
+				F67FB4EB265F18DB0076D3D6 /* TabScroll */,
+				F67FB4DE265F18B70076D3D6 /* CollectionViewTagLayout */,
+				F67FB4E1265F18B70076D3D6 /* FLImageView */,
+				F67FB494265F17D80076D3D6 /* Pickle */,
+			);
+			path = ThirtParty;
+			sourceTree = "<group>";
+		};
+		F67FB494265F17D80076D3D6 /* Pickle */ = {
+			isa = PBXGroup;
+			children = (
+				F67FB4D1265F187F0076D3D6 /* Assets */,
+				F67FB49B265F18150076D3D6 /* CameraCompatible.swift */,
+				F67FB4AE265F18170076D3D6 /* CameraSessionHandler.swift */,
+				F67FB4B2265F18170076D3D6 /* GalleryPhotoCell.swift */,
+				F67FB497265F18150076D3D6 /* GalleryVideoCell.swift */,
+				F67FB4AB265F18160076D3D6 /* ImagePickerConfigurable.swift */,
+				F67FB4AC265F18160076D3D6 /* ImagePickerController.swift */,
+				F67FB49F265F18160076D3D6 /* ImagePickerControllerDelegate.swift */,
+				F67FB4A1265F18160076D3D6 /* ImagePickerParameters.swift */,
+				F67FB498265F18150076D3D6 /* LiveView.swift */,
+				F67FB4AD265F18170076D3D6 /* PhotoAlbumCell.swift */,
+				F67FB4A8265F18160076D3D6 /* PhotoAlbumsTableView.swift */,
+				F67FB49D265F18150076D3D6 /* PhotoAlbumsViewController.swift */,
+				F67FB4A3265F18160076D3D6 /* PhotoAlbumTitleButton.swift */,
+				F67FB49A265F18150076D3D6 /* PhotoDetailViewController.swift */,
+				F67FB4A0265F18160076D3D6 /* PhotoGalleryCameraCell.swift */,
+				F67FB4B0265F18170076D3D6 /* PhotoGalleryCameraIconView.swift */,
+				F67FB4B1265F18170076D3D6 /* PhotoGalleryHintLabel.swift */,
+				F67FB4A4265F18160076D3D6 /* PhotoGalleryLiveViewCell.swift */,
+				F67FB4A2265F18160076D3D6 /* PhotoGalleryTagLabel.swift */,
+				F67FB4AA265F18160076D3D6 /* PhotoGalleryViewController.swift */,
+				F67FB4A7265F18160076D3D6 /* PhotoGalleryViewController+UIViewControllerPreviewing.swift */,
+				F67FB496265F18150076D3D6 /* SlideDownDismissingAnimator.swift */,
+				F67FB4A9265F18160076D3D6 /* SlideUpPresentation.swift */,
+				F67FB4A6265F18160076D3D6 /* SlideUpPresentationController.swift */,
+				F67FB499265F18150076D3D6 /* SlideUpPresentingAnimator.swift */,
+				F67FB4AF265F18170076D3D6 /* UIColor+Palette.swift */,
+				F67FB49E265F18150076D3D6 /* UIFont+Style.swift */,
+				F67FB49C265F18150076D3D6 /* UINavigationController+ImagePickerConfigurable.swift */,
+				F67FB4A5265F18160076D3D6 /* VideoPropertyView.swift */,
+			);
+			path = Pickle;
+			sourceTree = "<group>";
+		};
+		F67FB4D1265F187F0076D3D6 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F67FB4D2265F187F0076D3D6 /* Localizable.strings */,
+				F67FB4D9265F187F0076D3D6 /* Images.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		F67FB4DE265F18B70076D3D6 /* CollectionViewTagLayout */ = {
+			isa = PBXGroup;
+			children = (
+				F67FB4DF265F18B70076D3D6 /* TagsStyleFlowLayout.swift */,
+				F67FB4E0265F18B70076D3D6 /* ContentDynamicLayout.swift */,
+			);
+			path = CollectionViewTagLayout;
+			sourceTree = "<group>";
+		};
+		F67FB4E1265F18B70076D3D6 /* FLImageView */ = {
+			isa = PBXGroup;
+			children = (
+				F67FB4E2265F18B70076D3D6 /* FLAnimatedImage.m */,
+				F67FB4E3265F18B70076D3D6 /* FLAnimatedImageView.m */,
+				F67FB4E4265F18B70076D3D6 /* FLAnimatedImage.h */,
+				F67FB4E5265F18B70076D3D6 /* FLAnimatedImageView.h */,
+			);
+			path = FLImageView;
+			sourceTree = "<group>";
+		};
+		F67FB4EB265F18DB0076D3D6 /* TabScroll */ = {
+			isa = PBXGroup;
+			children = (
+				F67FB4EC265F18DB0076D3D6 /* ACTabScrollView */,
+				F67FB4EF265F18DB0076D3D6 /* PageMenu */,
+				F67FB4F7265F18DB0076D3D6 /* HeaderTabScroll */,
+			);
+			path = TabScroll;
+			sourceTree = "<group>";
+		};
+		F67FB4EC265F18DB0076D3D6 /* ACTabScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				F67FB4ED265F18DB0076D3D6 /* ACTabScrollView.swift */,
+				F67FB4EE265F18DB0076D3D6 /* ACTabScrollView+Protocol.swift */,
+			);
+			path = ACTabScrollView;
+			sourceTree = "<group>";
+		};
+		F67FB4EF265F18DB0076D3D6 /* PageMenu */ = {
+			isa = PBXGroup;
+			children = (
+				F67FB4F0265F18DB0076D3D6 /* CAPSPageMenu+UIGestureRecognizerDelegate.swift */,
+				F67FB4F1265F18DB0076D3D6 /* CAPSPageMenu+Options.swift */,
+				F67FB4F2265F18DB0076D3D6 /* MenuItemView.swift */,
+				F67FB4F3265F18DB0076D3D6 /* CAPSPageMenu+UIScrollViewDelegate.swift */,
+				F67FB4F4265F18DB0076D3D6 /* CAPSPageMenu+UIConfiguration.swift */,
+				F67FB4F5265F18DB0076D3D6 /* CAPSPageMenuConfiguration.swift */,
+				F67FB4F6265F18DB0076D3D6 /* CAPSPageMenu.swift */,
+			);
+			path = PageMenu;
+			sourceTree = "<group>";
+		};
+		F67FB4F7265F18DB0076D3D6 /* HeaderTabScroll */ = {
+			isa = PBXGroup;
+			children = (
+				F67FB4F8265F18DB0076D3D6 /* PageMenu */,
+				F67FB4FA265F18DB0076D3D6 /* Base */,
+			);
+			path = HeaderTabScroll;
+			sourceTree = "<group>";
+		};
+		F67FB4F8265F18DB0076D3D6 /* PageMenu */ = {
+			isa = PBXGroup;
+			children = (
+				F67FB4F9265F18DB0076D3D6 /* HeaderedCAPSPageMenuViewController.swift */,
+			);
+			path = PageMenu;
+			sourceTree = "<group>";
+		};
+		F67FB4FA265F18DB0076D3D6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F67FB4FB265F18DB0076D3D6 /* AbstractHeaderedTabScrollViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F67FB4FC265F18DB0076D3D6 /* ImageScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				F67FB4FD265F18DB0076D3D6 /* ImageScrollView.swift */,
+			);
+			path = ImageScrollView;
+			sourceTree = "<group>";
+		};
+		F67FB4FE265F18DC0076D3D6 /* NIAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				F67FB4FF265F18DC0076D3D6 /* NimbusAttributedLabel.h */,
+				F67FB500265F18DC0076D3D6 /* NIAttributedLabel.h */,
+				F67FB501265F18DC0076D3D6 /* NSMutableAttributedString+NimbusAttributedLabel.h */,
+				F67FB502265F18DC0076D3D6 /* NIAttributedLabel+Testing.h */,
+				F67FB503265F18DC0076D3D6 /* NIAttributedLabel.m */,
+				F67FB504265F18DC0076D3D6 /* NSMutableAttributedString+NimbusAttributedLabel.m */,
+			);
+			path = NIAttributedLabel;
+			sourceTree = "<group>";
+		};
+		F67FB505265F18DC0076D3D6 /* NICore */ = {
+			isa = PBXGroup;
+			children = (
+				F67FB506265F18DC0076D3D6 /* NINonEmptyCollectionTesting.h */,
+				F67FB507265F18DC0076D3D6 /* NICommonMetrics.m */,
+				F67FB508265F18DC0076D3D6 /* NIViewRecycler.m */,
+				F67FB509265F18DC0076D3D6 /* NIPreprocessorMacros.h */,
+				F67FB50A265F18DC0076D3D6 /* NIButtonUtilities.h */,
+				F67FB50B265F18DC0076D3D6 /* NIRuntimeClassModifications.h */,
+				F67FB50C265F18DC0076D3D6 /* NIOperations.m */,
+				F67FB50D265F18DC0076D3D6 /* NIState.h */,
+				F67FB50E265F18DC0076D3D6 /* NINetworkActivity.m */,
+				F67FB50F265F18DC0076D3D6 /* NIDebuggingTools.h */,
+				F67FB510265F18DC0076D3D6 /* NIDeviceOrientation.m */,
+				F67FB511265F18DC0076D3D6 /* NimbusCore+Additions.h */,
+				F67FB512265F18DC0076D3D6 /* NIFoundationMethods.h */,
+				F67FB513265F18DC0076D3D6 /* NIPaths.h */,
+				F67FB514265F18DC0076D3D6 /* NIImageUtilities.h */,
+				F67FB515265F18DC0076D3D6 /* NIError.m */,
+				F67FB516265F18DC0076D3D6 /* UIResponder+NimbusCore.m */,
+				F67FB517265F18DC0076D3D6 /* NISDKAvailability.h */,
+				F67FB518265F18DC0076D3D6 /* NISnapshotRotation.h */,
+				F67FB519265F18DC0076D3D6 /* NIActions.h */,
+				F67FB51A265F18DC0076D3D6 /* NINonRetainingCollections.m */,
+				F67FB51B265F18DC0076D3D6 /* NIInMemoryCache.h */,
+				F67FB51C265F18DC0076D3D6 /* NIRuntimeClassModifications.m */,
+				F67FB51D265F18DC0076D3D6 /* NimbusCore.h */,
+				F67FB51E265F18DC0076D3D6 /* NIButtonUtilities.m */,
+				F67FB51F265F18DC0076D3D6 /* NIViewRecycler.h */,
+				F67FB520265F18DC0076D3D6 /* NICommonMetrics.h */,
+				F67FB521265F18DC0076D3D6 /* NINonEmptyCollectionTesting.m */,
+				F67FB522265F18DC0076D3D6 /* NINetworkActivity.h */,
+				F67FB523265F18DC0076D3D6 /* NIState.m */,
+				F67FB524265F18DC0076D3D6 /* NIOperations.h */,
+				F67FB525265F18DC0076D3D6 /* NIImageUtilities.m */,
+				F67FB526265F18DC0076D3D6 /* NIPaths.m */,
+				F67FB527265F18DC0076D3D6 /* NIFoundationMethods.m */,
+				F67FB528265F18DC0076D3D6 /* NIDeviceOrientation.h */,
+				F67FB529265F18DC0076D3D6 /* NIDebuggingTools.m */,
+				F67FB52A265F18DC0076D3D6 /* NIInMemoryCache.m */,
+				F67FB52B265F18DC0076D3D6 /* NIOperations+Subclassing.h */,
+				F67FB52C265F18DC0076D3D6 /* NINonRetainingCollections.h */,
+				F67FB52D265F18DC0076D3D6 /* NIActions.m */,
+				F67FB52E265F18DC0076D3D6 /* NISnapshotRotation.m */,
+				F67FB52F265F18DC0076D3D6 /* NISDKAvailability.m */,
+				F67FB530265F18DC0076D3D6 /* UIResponder+NimbusCore.h */,
+				F67FB531265F18DC0076D3D6 /* NIError.h */,
+				F67FB532265F18DC0076D3D6 /* NIActions+Subclassing.h */,
+			);
+			path = NICore;
+			sourceTree = "<group>";
+		};
+		F67FB533265F18DC0076D3D6 /* ImageCroper */ = {
+			isa = PBXGroup;
+			children = (
+				F67FB534265F18DC0076D3D6 /* ImageCropperConfiguration.swift */,
+				F67FB535265F18DC0076D3D6 /* ImageCropperConfigurator.swift */,
+				F67FB536265F18DC0076D3D6 /* ImageCropperModel.swift */,
+				F67FB537265F18DC0076D3D6 /* ImageCropperViewController.swift */,
+				F67FB538265F18DC0076D3D6 /* ImageCropperPresenter.swift */,
+				F67FB539265F18DC0076D3D6 /* ImageCropper.xib */,
+				F67FB53A265F18DC0076D3D6 /* UIImage+NormalizeOrientation.swift */,
+				F67FB53B265F18DC0076D3D6 /* ImageCropperRouter.swift */,
+			);
+			path = ImageCroper;
+			sourceTree = "<group>";
+		};
 		F6831CE92658B05500066171 /* ForgotPW */ = {
 			isa = PBXGroup;
 			children = (
@@ -636,6 +1068,11 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hant-HK",
+				ms,
+				ko,
+				"zh-Hant",
+				id,
 			);
 			mainGroup = CF78B746264C0F590062F4A1;
 			productRefGroup = CF78B750264C0F590062F4A1 /* Products */;
@@ -653,6 +1090,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF78B75F264C0F5A0062F4A1 /* LaunchScreen.storyboard in Resources */,
+				F67FB4DC265F187F0076D3D6 /* Images.xcassets in Resources */,
+				F67FB563265F18DC0076D3D6 /* ImageCropper.xib in Resources */,
+				F67FB4DB265F187F0076D3D6 /* Localizable.strings in Resources */,
 				CF78B75C264C0F5A0062F4A1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -723,96 +1163,173 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F67FB541265F18DC0076D3D6 /* CAPSPageMenu+UIScrollViewDelegate.swift in Sources */,
 				CF78B842264C39300062F4A1 /* OrderManager.swift in Sources */,
 				CF78B820264C18860062F4A1 /* UIFont+Extension.swift in Sources */,
 				F627AA2D26591B630012462C /* EndPointType.swift in Sources */,
+				F67FB4C3265F18170076D3D6 /* SlideUpPresentationController.swift in Sources */,
 				CF78B81F264C18860062F4A1 /* UIImageView+Extension.swift in Sources */,
 				F627AA2026591B160012462C /* Ward.swift in Sources */,
+				F67FB4C6265F18170076D3D6 /* SlideUpPresentation.swift in Sources */,
 				CF78B7FF264C18620062F4A1 /* Dictionary+Extension.swift in Sources */,
+				F67FB564265F18DC0076D3D6 /* UIImage+NormalizeOrientation.swift in Sources */,
 				CF78B822264C18860062F4A1 /* UIColor+Extension.swift in Sources */,
+				F67FB552265F18DC0076D3D6 /* NIRuntimeClassModifications.m in Sources */,
 				CF78B807264C18620062F4A1 /* CGSize+Extension.swift in Sources */,
 				CF78B7C9264C14DB0062F4A1 /* BageButton.swift in Sources */,
+				F67FB565265F18DC0076D3D6 /* ImageCropperRouter.swift in Sources */,
 				CF78B7C6264C14DB0062F4A1 /* TitleTextField.swift in Sources */,
+				F67FB4B6265F18170076D3D6 /* SlideUpPresentingAnimator.swift in Sources */,
 				CF78B839264C26030062F4A1 /* ImageManager.swift in Sources */,
 				CF78B803264C18620062F4A1 /* Array+Extension.swift in Sources */,
 				CF78B7C4264C14DB0062F4A1 /* TitleAndContent.swift in Sources */,
 				CF78B7B9264C14DB0062F4A1 /* BaseCollectionViewHeaderFooterCell.swift in Sources */,
 				F627AA2C26591B630012462C /* APIConfig.swift in Sources */,
+				F67FB4C7265F18170076D3D6 /* PhotoGalleryViewController.swift in Sources */,
+				F67FB4CE265F18170076D3D6 /* PhotoGalleryHintLabel.swift in Sources */,
+				F67FB4C4265F18170076D3D6 /* PhotoGalleryViewController+UIViewControllerPreviewing.swift in Sources */,
 				F61190A3265E8D4F0008F2AF /* MenuViewModel.swift in Sources */,
+				F67FB550265F18DC0076D3D6 /* UIResponder+NimbusCore.m in Sources */,
+				F67FB4B3265F18170076D3D6 /* SlideDownDismissingAnimator.swift in Sources */,
 				CF78B7E4264C17CB0062F4A1 /* InfoShopViewController.swift in Sources */,
+				F67FB4BB265F18170076D3D6 /* UIFont+Style.swift in Sources */,
 				CF78B7BE264C14DB0062F4A1 /* ShimmerButton.swift in Sources */,
+				F67FB559265F18DC0076D3D6 /* NIDebuggingTools.m in Sources */,
 				CF78B804264C18620062F4A1 /* UserDefault+Extension.swift in Sources */,
 				F627AA1F26591B160012462C /* Province.swift in Sources */,
+				F67FB4C0265F18170076D3D6 /* PhotoAlbumTitleButton.swift in Sources */,
+				F67FB53E265F18DC0076D3D6 /* CAPSPageMenu+UIGestureRecognizerDelegate.swift in Sources */,
+				F67FB53D265F18DC0076D3D6 /* ACTabScrollView+Protocol.swift in Sources */,
+				F67FB4B8265F18170076D3D6 /* CameraCompatible.swift in Sources */,
+				F67FB4E6265F18B70076D3D6 /* TagsStyleFlowLayout.swift in Sources */,
 				CF78B801264C18620062F4A1 /* String+Extension.swift in Sources */,
 				CF78B846264C395B0062F4A1 /* MenuManager.swift in Sources */,
 				CF78B829264C18860062F4A1 /* UIViewController+Extenstion.swift in Sources */,
 				CF78B83F264C33FC0062F4A1 /* EmptyView.swift in Sources */,
+				F67FB54B265F18DC0076D3D6 /* NIViewRecycler.m in Sources */,
+				F67FB53C265F18DC0076D3D6 /* ACTabScrollView.swift in Sources */,
 				F61190C8265EA1320008F2AF /* CreateProductViewController.swift in Sources */,
 				CF78B7C0264C14DB0062F4A1 /* BaseShimmerProtocol.swift in Sources */,
+				F67FB55B265F18DC0076D3D6 /* NIActions.m in Sources */,
+				F67FB545265F18DC0076D3D6 /* HeaderedCAPSPageMenuViewController.swift in Sources */,
 				CF78B7EC264C18150062F4A1 /* MenuViewController.swift in Sources */,
 				F627AA2A26591B630012462C /* APIResponse.swift in Sources */,
 				CF78B7BF264C14DB0062F4A1 /* BaseShimmerView.swift in Sources */,
 				F61190A6265E95620008F2AF /* ChatViewController.swift in Sources */,
+				F67FB4BC265F18170076D3D6 /* ImagePickerControllerDelegate.swift in Sources */,
 				CF78B823264C18860062F4A1 /* UILabel+Extension.swift in Sources */,
 				CF78B849264C3AC50062F4A1 /* MenuTableViewCell.swift in Sources */,
+				F67FB55F265F18DC0076D3D6 /* ImageCropperConfigurator.swift in Sources */,
+				F67FB490265F17470076D3D6 /* AppRouter.swift in Sources */,
 				F6B6502B2656B849002EC4BC /* SignUpViewController.swift in Sources */,
+				F67FB4BF265F18170076D3D6 /* PhotoGalleryTagLabel.swift in Sources */,
 				CF78B827264C18860062F4A1 /* UINavigationController+Extension.swift in Sources */,
+				F67FB4B4265F18170076D3D6 /* GalleryVideoCell.swift in Sources */,
+				F67FB554265F18DC0076D3D6 /* NINonEmptyCollectionTesting.m in Sources */,
+				F67FB55D265F18DC0076D3D6 /* NISDKAvailability.m in Sources */,
 				F627AA2B26591B630012462C /* ServiceErrorAPI.swift in Sources */,
 				F627AA3526591D1A0012462C /* AlertManager.swift in Sources */,
+				F67FB553265F18DC0076D3D6 /* NIButtonUtilities.m in Sources */,
+				F67FB540265F18DC0076D3D6 /* MenuItemView.swift in Sources */,
+				F67FB4BE265F18170076D3D6 /* ImagePickerParameters.swift in Sources */,
 				CF78B7C2264C14DB0062F4A1 /* ShimmerLabel.swift in Sources */,
+				F67FB546265F18DC0076D3D6 /* AbstractHeaderedTabScrollViewController.swift in Sources */,
+				F67FB4E7265F18B70076D3D6 /* ContentDynamicLayout.swift in Sources */,
+				F67FB4B7265F18170076D3D6 /* PhotoDetailViewController.swift in Sources */,
 				CF78B7E7264C17EC0062F4A1 /* NotificationViewController.swift in Sources */,
 				F6831CEC2658B06400066171 /* ForgotPasswordViewController.swift in Sources */,
 				CF78B82E264C18860062F4A1 /* UITableView+Extension.swift in Sources */,
+				F67FB561265F18DC0076D3D6 /* ImageCropperViewController.swift in Sources */,
 				CF78B824264C18860062F4A1 /* UIButton+Extension.swift in Sources */,
+				F67FB560265F18DC0076D3D6 /* ImageCropperModel.swift in Sources */,
 				F627AA1E26591B160012462C /* District.swift in Sources */,
+				F67FB54A265F18DC0076D3D6 /* NICommonMetrics.m in Sources */,
 				CF78B80A264C18620062F4A1 /* NSAttributedString+Extension.swift in Sources */,
 				CF78B809264C18620062F4A1 /* Double+Extension.swift in Sources */,
 				CF78B7CA264C14DB0062F4A1 /* PaddingTextView.swift in Sources */,
 				F627AA3126591C9F0012462C /* User.swift in Sources */,
 				F6B6FBD5265817730064CAA8 /* TextManager.swift in Sources */,
+				F67FB53F265F18DC0076D3D6 /* CAPSPageMenu+Options.swift in Sources */,
 				F61190D3265EB0B10008F2AF /* UploadImageCollectionViewCell.swift in Sources */,
 				F61190AF265E96080008F2AF /* StatisticalViewController.swift in Sources */,
 				CF78B7B8264C14DB0062F4A1 /* BaseTableViewCell.swift in Sources */,
+				F67FB4C2265F18170076D3D6 /* VideoPropertyView.swift in Sources */,
+				F67FB549265F18DC0076D3D6 /* NSMutableAttributedString+NimbusAttributedLabel.m in Sources */,
 				CF78B7BB264C14DB0062F4A1 /* BaseAlertViewController.swift in Sources */,
 				CF78B826264C18860062F4A1 /* UIImage+Extension.swift in Sources */,
+				F67FB55A265F18DC0076D3D6 /* NIInMemoryCache.m in Sources */,
+				F67FB547265F18DC0076D3D6 /* ImageScrollView.swift in Sources */,
 				F627AA2826591B630012462C /* NetworkLogger.swift in Sources */,
+				F67FB543265F18DC0076D3D6 /* CAPSPageMenuConfiguration.swift in Sources */,
+				F67FB4BA265F18170076D3D6 /* PhotoAlbumsViewController.swift in Sources */,
+				F67FB4B5265F18170076D3D6 /* LiveView.swift in Sources */,
+				F67FB55C265F18DC0076D3D6 /* NISnapshotRotation.m in Sources */,
 				CF78B82C264C18860062F4A1 /* PHAsset+Extension.swift in Sources */,
 				CF78B800264C18620062F4A1 /* CGPoint+Extensions.swift in Sources */,
+				F67FB4C5265F18170076D3D6 /* PhotoAlbumsTableView.swift in Sources */,
+				F67FB544265F18DC0076D3D6 /* CAPSPageMenu.swift in Sources */,
+				F67FB4B9265F18170076D3D6 /* UINavigationController+ImagePickerConfigurable.swift in Sources */,
+				F67FB54D265F18DC0076D3D6 /* NINetworkActivity.m in Sources */,
+				F67FB4CF265F18170076D3D6 /* GalleryPhotoCell.swift in Sources */,
 				CF78B825264C18860062F4A1 /* UIView+Extension.swift in Sources */,
+				F67FB4E8265F18B70076D3D6 /* FLAnimatedImage.m in Sources */,
+				F67FB562265F18DC0076D3D6 /* ImageCropperPresenter.swift in Sources */,
+				F67FB555265F18DC0076D3D6 /* NIState.m in Sources */,
 				CF78B82A264C18860062F4A1 /* UICollectionView+Extension.swift in Sources */,
 				CF78B808264C18620062F4A1 /* Comparable+Clamp.swift in Sources */,
 				F6800BCA2659EF3D0020D39C /* EnterNewPWViewController.swift in Sources */,
+				F67FB56E265F1B0F0076D3D6 /* Comment.swift in Sources */,
 				F627AA2926591B630012462C /* APIService.swift in Sources */,
 				F6B6FBD22658161C0064CAA8 /* UserManager.swift in Sources */,
 				CF78B828264C18860062F4A1 /* URL+Extension.swift in Sources */,
+				F67FB55E265F18DC0076D3D6 /* ImageCropperConfiguration.swift in Sources */,
 				CF78B7BC264C14DB0062F4A1 /* BaseCollectionViewCell.swift in Sources */,
 				CF78B7FE264C18620062F4A1 /* Int+Extension.swift in Sources */,
 				CF78B7FD264C18620062F4A1 /* Notification+Extension.swift in Sources */,
 				F61190AC265E95A60008F2AF /* ProductViewController.swift in Sources */,
 				CF78B832264C19390062F4A1 /* Dimension.swift in Sources */,
+				F67FB4CD265F18170076D3D6 /* PhotoGalleryCameraIconView.swift in Sources */,
 				CF78B753264C0F590062F4A1 /* AppDelegate.swift in Sources */,
 				F61190CD265EA9B50008F2AF /* ProductManager.swift in Sources */,
 				F627AA3826591DCD0012462C /* AppInfo.swift in Sources */,
 				CF78B805264C18620062F4A1 /* Date+Extension.swift in Sources */,
+				F67FB4CC265F18170076D3D6 /* UIColor+Palette.swift in Sources */,
 				CF78B82B264C18860062F4A1 /* UIApplication+Exension.swift in Sources */,
 				CF78B806264C18620062F4A1 /* JSON+Parser.swift in Sources */,
+				F67FB54E265F18DC0076D3D6 /* NIDeviceOrientation.m in Sources */,
 				CF78B836264C1A000062F4A1 /* AppConfig.swift in Sources */,
+				F67FB4CA265F18170076D3D6 /* PhotoAlbumCell.swift in Sources */,
+				F67FB556265F18DC0076D3D6 /* NIImageUtilities.m in Sources */,
+				F67FB548265F18DC0076D3D6 /* NIAttributedLabel.m in Sources */,
 				CF78B7BD264C14DB0062F4A1 /* BaseView.swift in Sources */,
+				F67FB4CB265F18170076D3D6 /* CameraSessionHandler.swift in Sources */,
 				CF78B7C3264C14DB0062F4A1 /* BaseViewModel.swift in Sources */,
 				CF78B821264C18860062F4A1 /* GradientPoint.swift in Sources */,
+				F67FB4C9265F18170076D3D6 /* ImagePickerController.swift in Sources */,
+				F67FB4E9265F18B70076D3D6 /* FLAnimatedImageView.m in Sources */,
 				CF78B7BA264C14DB0062F4A1 /* BaseTableViewHeaderFooter.swift in Sources */,
+				F67FB542265F18DC0076D3D6 /* CAPSPageMenu+UIConfiguration.swift in Sources */,
 				CF78B7C8264C14DB0062F4A1 /* PaddingLabel.swift in Sources */,
 				F627AA0E2659133C0012462C /* BaseTextView.swift in Sources */,
 				F61190D0265EB05C0008F2AF /* DeviceSupport.swift in Sources */,
 				CF78B7B7264C14DB0062F4A1 /* BaseViewController.swift in Sources */,
+				F67FB551265F18DC0076D3D6 /* NINonRetainingCollections.m in Sources */,
 				CF78B82D264C18860062F4A1 /* UITextField+Extension.swift in Sources */,
 				F6800BC72659EF2F0020D39C /* VerifyOTPViewController.swift in Sources */,
+				F67FB4C8265F18170076D3D6 /* ImagePickerConfigurable.swift in Sources */,
 				F61190D6265EB1B10008F2AF /* Photo.swift in Sources */,
 				CF78B802264C18620062F4A1 /* CGFloat+Additions.swift in Sources */,
+				F67FB4C1265F18170076D3D6 /* PhotoGalleryLiveViewCell.swift in Sources */,
 				F61190A9265E957F0008F2AF /* ManagerOrderViewController.swift in Sources */,
+				F67FB54F265F18DC0076D3D6 /* NIError.m in Sources */,
 				F6B650272656B839002EC4BC /* SignInViewController.swift in Sources */,
 				CF78B7C1264C14DB0062F4A1 /* ShimmerImageView.swift in Sources */,
+				F67FB558265F18DC0076D3D6 /* NIFoundationMethods.m in Sources */,
 				CF78B7E1264C17B60062F4A1 /* ShopViewController.swift in Sources */,
+				F67FB56B265F1AA20076D3D6 /* Product.swift in Sources */,
+				F67FB557265F18DC0076D3D6 /* NIPaths.m in Sources */,
+				F67FB4BD265F18170076D3D6 /* PhotoGalleryCameraCell.swift in Sources */,
+				F67FB54C265F18DC0076D3D6 /* NIOperations.m in Sources */,
 				CF78B7C7264C14DB0062F4A1 /* PaddingTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -826,6 +1343,20 @@
 				CF78B75E264C0F5A0062F4A1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F67FB4D2265F187F0076D3D6 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F67FB4D3265F187F0076D3D6 /* en */,
+				F67FB4D4265F187F0076D3D6 /* zh-Hant-HK */,
+				F67FB4D5265F187F0076D3D6 /* ms */,
+				F67FB4D6265F187F0076D3D6 /* ko */,
+				F67FB4D7265F187F0076D3D6 /* Base */,
+				F67FB4D8265F187F0076D3D6 /* zh-Hant */,
+				F67FB4DA265F187F0076D3D6 /* id */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

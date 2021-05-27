@@ -6,11 +6,12 @@
 //
 
 import UIKit
+import Photos
 
 class CreateProductViewController: BaseViewController {
     
     static let defaultNumberImages = 5
-
+    var product = Product()
     var numberHorizontalItem: CGFloat {
         var numberHorizontalItem: CGFloat = 2
         let ip6Width: CGFloat = 375
@@ -213,7 +214,14 @@ extension CreateProductViewController: UICollectionViewDataSource {
 }
 
 extension CreateProductViewController: UICollectionViewDelegate {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let maxSelectImage = CreateProductViewController.defaultNumberImages - product.photos.count
+        if maxSelectImage <= 0 {
+            AlertManager.shared.show(message: TextManager.selectMaxPhotoAddProduct.localized())
+            return
+        }
+        AppRouter.presentToImagePicker(pickerDelegate: self, limitImage: maxSelectImage)
+    }
 }
 
 // MARK: - UploadImageCollectionViewCellDelegate
@@ -222,3 +230,46 @@ extension CreateProductViewController: UploadImageCollectionViewCellDelegate {
     func didSelectDeleteButton(cell: UploadImageCollectionViewCell, at inexPath: IndexPath) {
     }
 }
+
+// MARK: - ImagePickerControllerDelegate
+
+extension CreateProductViewController: ImagePickerControllerDelegate {
+    func imagePickerController(_ picker: ImagePickerController,
+                               shouldLaunchCameraWithAuthorization status: AVAuthorizationStatus) -> Bool {
+        return true
+    }
+    
+    func imagePickerController(_ picker: ImagePickerController,
+                               didFinishPickingImageAssets assets: [PHAsset]) {
+        dismiss(animated: true, completion: nil)
+        var photos: [Photo] = Array(repeating: Photo(), count: assets.count)
+        let dispatchGroup = DispatchGroup()
+        
+        DispatchQueue.global(qos: .userInteractive).async {
+            for (index, asset) in assets.enumerated() {
+                dispatchGroup.enter()
+                asset.getUIImage(completion: { (image) in
+                    if let image = image, index < photos.count {
+                        photos[index] = Photo(image: image.normalizeImage())
+                    }
+                    dispatchGroup.leave()
+                })
+            }
+            
+            let result = dispatchGroup.wait(timeout: .now() + .seconds(5));
+            if result == .success {
+                DispatchQueue.main.async { [weak self] in
+                    guard let self = self else { return }
+//                    self.product.addNewPhoto(photos: photos)
+                    self.listImageCollectionView.reloadData()
+//                    self.checkCanEnableSaveButton()
+                }
+            }
+        }
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: ImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }
+}
+

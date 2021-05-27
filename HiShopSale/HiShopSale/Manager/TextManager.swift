@@ -47,4 +47,8 @@ extension TextManager {
     static let verifyCode                           = "Xác thực tài khoản"
     static let createNewPW                          = "Tạo mật khẩu mới"
     static let confirmPW                            = "Nhập lại mật khẩu"
+    static let preview                      = "Xem trước"
+    static let photoPermission              = "Cho phép ứng dụng truy cập thư viện ảnh để chia sẻ hình ảnh đến bạn bè"
+    static let cameraPermission             = "Cho phép ứng dụng truy cập Camera ảnh để chia sẻ khoảnh khắc đến bạn bè"
+
 }

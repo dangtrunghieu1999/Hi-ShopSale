@@ -2,8 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string></string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+    <key>NSCameraUsageDescription</key>
+    <string>Ứng dụng muốn truy cập Camera của bạn để chia sẻ những khoảnh khắc đến bạn bè</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Ứng dụng muốn truy cập Thư viện ảnh để chia sẻ đến bạn bè</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
