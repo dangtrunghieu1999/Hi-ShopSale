@@ -15,12 +15,18 @@ class BaseTextView: BaseView {
         }
     }
     
+    var boderColor: UIColor? {
+        didSet {
+            addressTextView.layer.borderColor = boderColor?.cgColor
+            addressTextView.layer.borderWidth = 1
+        }
+    }
+    
     var placeholder: String? {
         didSet {
             addressTextView.text = placeholder
         }
     }
-
 
     private let titleLabel: UILabel = {
         let label = UILabel()
@@ -29,7 +35,7 @@ class BaseTextView: BaseView {
         return label
     }()
     
-    fileprivate lazy var addressTextView: UITextView = {
+    lazy var addressTextView: UITextView = {
         let textView = UITextView()
         textView.textContainerInset = UIEdgeInsets(top: 10, left: 15, bottom: 10, right: 20)
         textView.text = TextManager.shopAddress.localized()

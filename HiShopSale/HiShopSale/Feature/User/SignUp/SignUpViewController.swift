@@ -59,7 +59,6 @@ class SignUpViewController: BaseViewController {
         textField.addTarget(self, action: #selector(textFieldValueChange(_:)), for: .editingChanged)
         return textField
     }()
-
     
     fileprivate lazy var shopAddressTextView: BaseTextView = {
         let textview = BaseTextView()

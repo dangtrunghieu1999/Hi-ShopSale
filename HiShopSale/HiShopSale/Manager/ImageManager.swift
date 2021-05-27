@@ -33,5 +33,6 @@ extension ImageManager {
 extension ImageManager {
     static let addNewImgPlaceHolder                 = UIImage(named: "addNewImgPlaceHolder")
     static let closeCircle                          = UIImage(named: "closeCircle")
+    static let avatarDefault                         = UIImage(named: "avatarDefault")
 
 }

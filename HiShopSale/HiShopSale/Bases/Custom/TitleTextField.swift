@@ -39,6 +39,19 @@ class TitleTextField: BaseView {
         }
     }
     
+    var textColor: UIColor? {
+        didSet {
+            textField.textColor = textColor
+        }
+    }
+    
+    var boderColor: UIColor? {
+        didSet {
+            textField.layer.borderColor = UIColor.second.cgColor
+            textField.layer.borderWidth = 1
+        }
+    }
+    
     var titleText: String? {
         didSet {
             titleLabel.text = titleText

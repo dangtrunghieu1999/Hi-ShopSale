@@ -94,6 +94,8 @@
 		F627AA3126591C9F0012462C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627AA3026591C9F0012462C /* User.swift */; };
 		F627AA3526591D1A0012462C /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627AA3426591D1A0012462C /* AlertManager.swift */; };
 		F627AA3826591DCD0012462C /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627AA3726591DCD0012462C /* AppInfo.swift */; };
+		F6518C34265F55AE0021506E /* ChatShopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6518C33265F55AE0021506E /* ChatShopTableViewCell.swift */; };
+		F6518C37265F55DC0021506E /* ChatDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6518C36265F55DC0021506E /* ChatDetailViewController.swift */; };
 		F67FB490265F17470076D3D6 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB48F265F17470076D3D6 /* AppRouter.swift */; };
 		F67FB4B3265F18170076D3D6 /* SlideDownDismissingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB496265F18150076D3D6 /* SlideDownDismissingAnimator.swift */; };
 		F67FB4B4265F18170076D3D6 /* GalleryVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67FB497265F18150076D3D6 /* GalleryVideoCell.swift */; };
@@ -275,6 +277,8 @@
 		F627AA3026591C9F0012462C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F627AA3426591D1A0012462C /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		F627AA3726591DCD0012462C /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
+		F6518C33265F55AE0021506E /* ChatShopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatShopTableViewCell.swift; sourceTree = "<group>"; };
+		F6518C36265F55DC0021506E /* ChatDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailViewController.swift; sourceTree = "<group>"; };
 		F67FB48F265F17470076D3D6 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		F67FB496265F18150076D3D6 /* SlideDownDismissingAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideDownDismissingAnimator.swift; sourceTree = "<group>"; };
 		F67FB497265F18150076D3D6 /* GalleryVideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryVideoCell.swift; sourceTree = "<group>"; };
@@ -622,6 +626,8 @@
 			isa = PBXGroup;
 			children = (
 				F61190A5265E95620008F2AF /* ChatViewController.swift */,
+				F6518C33265F55AE0021506E /* ChatShopTableViewCell.swift */,
+				F6518C36265F55DC0021506E /* ChatDetailViewController.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -1194,6 +1200,7 @@
 				CF78B7E4264C17CB0062F4A1 /* InfoShopViewController.swift in Sources */,
 				F67FB4BB265F18170076D3D6 /* UIFont+Style.swift in Sources */,
 				CF78B7BE264C14DB0062F4A1 /* ShimmerButton.swift in Sources */,
+				F6518C37265F55DC0021506E /* ChatDetailViewController.swift in Sources */,
 				F67FB559265F18DC0076D3D6 /* NIDebuggingTools.m in Sources */,
 				CF78B804264C18620062F4A1 /* UserDefault+Extension.swift in Sources */,
 				F627AA1F26591B160012462C /* Province.swift in Sources */,
@@ -1278,6 +1285,7 @@
 				CF78B82A264C18860062F4A1 /* UICollectionView+Extension.swift in Sources */,
 				CF78B808264C18620062F4A1 /* Comparable+Clamp.swift in Sources */,
 				F6800BCA2659EF3D0020D39C /* EnterNewPWViewController.swift in Sources */,
+				F6518C34265F55AE0021506E /* ChatShopTableViewCell.swift in Sources */,
 				F67FB56E265F1B0F0076D3D6 /* Comment.swift in Sources */,
 				F627AA2926591B630012462C /* APIService.swift in Sources */,
 				F6B6FBD22658161C0064CAA8 /* UserManager.swift in Sources */,

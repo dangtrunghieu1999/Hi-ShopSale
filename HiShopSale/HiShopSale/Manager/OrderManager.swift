@@ -18,7 +18,10 @@ class TextManager {
     static let tokenFailMessage             = "Phiên làm việc hết hạn. Bạn vui lòng đăng nhập lại!"
     static let cancel                       = "Huỷ"
     static let agree                        = "Đồng ý"
-
+    static let getPhotoLibrary              = "Chọn ảnh từ thư viện"
+    static let camera                       = "Máy ảnh"
+    static let changePhoto                  = "Thay đổi ảnh"
+    static let save                         = "Lưu"
 }
 
 
