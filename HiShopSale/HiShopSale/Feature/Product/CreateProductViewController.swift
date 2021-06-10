@@ -52,6 +52,7 @@ class CreateProductViewController: BaseViewController {
         textField.titleText   = TextManager.productName.localized()
         textField.textField.fontSizePlaceholder(text: TextManager.inputProductName.localized(),
                                                 size: FontSize.h1.rawValue)
+        textField.boderColor = UIColor.second
         return textField
     }()
     
@@ -61,6 +62,7 @@ class CreateProductViewController: BaseViewController {
                                                 size: FontSize.h1.rawValue)
         textField.titleText = TextManager.cateogry.localized()
         textField.rightTextfieldImage = ImageManager.dropDown
+        textField.boderColor = UIColor.second
         return textField
     }()
     
@@ -69,6 +71,7 @@ class CreateProductViewController: BaseViewController {
         textField.textField.fontSizePlaceholder(text: TextManager.inputOriginalPrice.localized(),
                                                 size: FontSize.h1.rawValue)
         textField.titleText = TextManager.inputOriginalPrice.localized()
+        textField.boderColor = UIColor.second
         textField.keyboardType = .numberPad
         return textField
     }()
@@ -78,6 +81,7 @@ class CreateProductViewController: BaseViewController {
         textField.textField.fontSizePlaceholder(text: TextManager.inputPromotionPrice.localized(),
                                                 size: FontSize.h1.rawValue)
         textField.titleText = TextManager.promotionPrice.localized()
+        textField.boderColor = UIColor.second
         textField.keyboardType = .numberPad
         return textField
     }()
@@ -86,6 +90,15 @@ class CreateProductViewController: BaseViewController {
         let textview = BaseTextView()
         textview.titleText = TextManager.detailDes
         textview.placeholder = TextManager.inputDetailDes
+        textview.boderColor = UIColor.second
+        return textview
+    }()
+    
+    fileprivate lazy var productUseTextView: BaseTextView = {
+        let textview = BaseTextView()
+        textview.titleText = TextManager.tutorial
+        textview.placeholder = TextManager.tutorial
+        textview.boderColor = UIColor.second
         return textview
     }()
 
@@ -95,6 +108,16 @@ class CreateProductViewController: BaseViewController {
                                                 size: FontSize.h1.rawValue)
         textField.titleText = TextManager.guarantee_Month.localized()
         textField.keyboardType = .numberPad
+        textField.boderColor = UIColor.second
+        return textField
+    }()
+    
+    fileprivate lazy var productByTextField: TitleTextField = {
+        let textField = TitleTextField()
+        textField.textField.fontSizePlaceholder(text: TextManager.productBy.localized(),
+                                                size: FontSize.h1.rawValue)
+        textField.titleText = TextManager.productBy.localized()
+        textField.boderColor = UIColor.second
         return textField
     }()
     
@@ -103,14 +126,25 @@ class CreateProductViewController: BaseViewController {
         textField.textField.fontSizePlaceholder(text: TextManager.inputTradeMark.localized(),
                                                 size: FontSize.h1.rawValue)
         textField.titleText = TextManager.tradeMark.localized()
+        textField.boderColor = UIColor.second
         return textField
     }()
     
     fileprivate lazy var originProductTextField: TitleTextField = {
         let textField = TitleTextField()
-        textField.textField.fontSizePlaceholder(text: TextManager.origin.localized(),
+        textField.textField.fontSizePlaceholder(text: TextManager.inputOrigin.localized(),
                                                 size: FontSize.h1.rawValue)
-        textField.titleText = TextManager.inputOrigin.localized()
+        textField.titleText = TextManager.origin.localized()
+        textField.boderColor = UIColor.second
+        return textField
+    }()
+    
+    fileprivate lazy var vatProductTextField: TitleTextField = {
+        let textField = TitleTextField()
+        textField.textField.fontSizePlaceholder(text: TextManager.inputVAT.localized(),
+                                                size: FontSize.h1.rawValue)
+        textField.titleText = TextManager.vat.localized()
+        textField.boderColor = UIColor.second
         return textField
     }()
     
@@ -175,9 +209,12 @@ class CreateProductViewController: BaseViewController {
         centerStackView.addArrangedSubview(originalPriceTextField)
         centerStackView.addArrangedSubview(promotionPriceTextField)
         centerStackView.addArrangedSubview(productDetailTextView)
+        centerStackView.addArrangedSubview(productUseTextView)
         centerStackView.addArrangedSubview(guaranteePriceTextField)
+        centerStackView.addArrangedSubview(productByTextField)
         centerStackView.addArrangedSubview(tradeMarkTextField)
         centerStackView.addArrangedSubview(originProductTextField)
+        centerStackView.addArrangedSubview(vatProductTextField)
         centerStackView.addArrangedSubview(addPhotoTitleLabel)
     }
     

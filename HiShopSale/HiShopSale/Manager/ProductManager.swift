@@ -37,7 +37,11 @@ extension TextManager {
     static let inputTradeMark               = "Nhập thương hiệu"
     static let origin                       = "Xuất xứ"
     static let inputOrigin                  = "Nhập xuất xứ"
-
+    static let productBy                    = "Cung cấp bởi"
+    static let tutorial                     = "Hướng dẫn"
+    static let vat                          = "Hoá đơn VAT"
+    static let inputVAT                     = "Nhập hoá đơn VAT"
+    
     static let create                       = "Tạo mới"
     static let addPhoto                     = "Thêm ảnh"
     

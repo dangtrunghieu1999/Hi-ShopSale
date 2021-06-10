@@ -150,16 +150,6 @@ class SignUpViewController: BaseViewController {
         return textField
     }()
     
-    fileprivate lazy var shopMapTextField: TitleTextField = {
-        let textField = TitleTextField()
-        textField.titleText   = TextManager.linkGGMap.localized()
-        textField.textField.fontSizePlaceholder(text: TextManager.linkGGMapPlaceholder.localized(),
-                                                size: FontSize.h1.rawValue)
-        textField.keyboardType = .numberPad
-        textField.addTarget(self, action: #selector(textFieldValueChange(_:)), for: .editingChanged)
-        return textField
-    }()
-    
     fileprivate lazy var shopLinkWebsiteTextField: TitleTextField = {
         let textField = TitleTextField()
         textField.titleText   = TextManager.linkWebsite.localized()
@@ -170,8 +160,6 @@ class SignUpViewController: BaseViewController {
         return textField
     }()
 
-
-        
     fileprivate lazy var signUpButton: UIButton = {
         let button = UIButton()
         button.setTitle(TextManager.signUp.localized(), for: .normal)
@@ -244,7 +232,6 @@ extension SignUpViewController {
         centerStackView.addArrangedSubview(districtTextField)
         centerStackView.addArrangedSubview(wardTextField)
         centerStackView.addArrangedSubview(shopHotLineTextField)
-        centerStackView.addArrangedSubview(shopMapTextField)
         centerStackView.addArrangedSubview(shopLinkWebsiteTextField)
     }
     
