@@ -41,6 +41,8 @@ extension TextManager {
     static let tutorial                     = "Hướng dẫn"
     static let vat                          = "Hoá đơn VAT"
     static let inputVAT                     = "Nhập hoá đơn VAT"
+    static let material                     = "Chất liệu"
+    static let inputMaterial                = "Nhập chất liệu"
     
     static let create                       = "Tạo mới"
     static let addPhoto                     = "Thêm ảnh"

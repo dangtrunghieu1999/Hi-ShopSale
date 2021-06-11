@@ -139,6 +139,15 @@ class CreateProductViewController: BaseViewController {
         return textField
     }()
     
+    fileprivate lazy var materialProductTextField: TitleTextField = {
+        let textField = TitleTextField()
+        textField.textField.fontSizePlaceholder(text: TextManager.inputMaterial.localized(),
+                                                size: FontSize.h1.rawValue)
+        textField.titleText = TextManager.material.localized()
+        textField.boderColor = UIColor.second
+        return textField
+    }()
+    
     fileprivate lazy var vatProductTextField: TitleTextField = {
         let textField = TitleTextField()
         textField.textField.fontSizePlaceholder(text: TextManager.inputVAT.localized(),
@@ -214,6 +223,7 @@ class CreateProductViewController: BaseViewController {
         centerStackView.addArrangedSubview(productByTextField)
         centerStackView.addArrangedSubview(tradeMarkTextField)
         centerStackView.addArrangedSubview(originProductTextField)
+        centerStackView.addArrangedSubview(materialProductTextField)
         centerStackView.addArrangedSubview(vatProductTextField)
         centerStackView.addArrangedSubview(addPhotoTitleLabel)
     }
