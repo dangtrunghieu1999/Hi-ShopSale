@@ -39,6 +39,19 @@ class TitleTextField: BaseView {
         }
     }
     
+    var textColor: UIColor? {
+        didSet {
+            textField.textColor = textColor
+        }
+    }
+    
+    var boderColor: UIColor? {
+        didSet {
+            textField.layer.borderColor = UIColor.second.cgColor
+            textField.layer.borderWidth = 1
+        }
+    }
+    
     var titleText: String? {
         didSet {
             titleLabel.text = titleText
@@ -63,32 +76,25 @@ class TitleTextField: BaseView {
         }
     }
     
-    var colorLine: UIColor? {
-        didSet {
-            lineView.backgroundColor = colorLine
-        }
-    }
-    
     // MARK: - UI Elements
     
     private let titleLabel: UILabel = {
         let label = UILabel()
-        label.textColor = UIColor.titleText
-        label.font = UIFont.systemFont(ofSize: FontSize.h1.rawValue)
+        label.textColor = UIColor.bodyText
+        label.font = UIFont.systemFont(ofSize: FontSize.h1.rawValue, weight: .semibold)
         return label
     }()
     
     private (set) lazy var textField: PaddingTextField = {
         let textField = PaddingTextField()
-        textField.padding =  UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        textField.padding =  UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
         textField.layer.masksToBounds = true
+        textField.layer.borderWidth = 1
+        textField.font = UIFont.systemFont(ofSize: FontSize.h1.rawValue)
+        textField.textColor = UIColor.bodyText
+        textField.layer.borderColor = UIColor.lightSeparator.cgColor
+        textField.layer.cornerRadius = dimension.cornerRadiusSmall
         return textField
-    }()
-    
-    lazy var lineView: BaseView = {
-        let view = BaseView()
-        view.backgroundColor = UIColor.separator
-        return view
     }()
     
     // MARK: - LifeCycles
@@ -96,7 +102,6 @@ class TitleTextField: BaseView {
     override func initialize() {
         layoutTitleLabel()
         layoutTextField()
-        layoutLineView()
     }
     
     func addTarget(_ target: Any?, action: Selector, for event: UIControl.Event) {
@@ -119,16 +124,6 @@ class TitleTextField: BaseView {
             make.top.equalTo(titleLabel.snp.bottom).offset(Dimension.shared.mediumMargin)
             make.height.equalTo(Dimension.shared.defaultHeightTextField)
             make.bottom.equalToSuperview()
-        }
-    }
-    
-    private func layoutLineView() {
-        addSubview(lineView)
-        lineView.snp.makeConstraints { (make) in
-            make.left.right.equalTo(textField)
-            make.bottom.equalToSuperview()
-                .offset(-1)
-            make.height.equalTo(1)
         }
     }
     

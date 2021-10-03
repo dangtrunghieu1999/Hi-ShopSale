@@ -15,8 +15,7 @@ class MenuTableViewCell: BaseTableViewCell {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
         imageView.clipsToBounds = true
-        imageView.layer.cornerRadius = 12
-        imageView.image = UIImage(named: "icon_shop")?.withRenderingMode(.automatic)
+        imageView.layer.masksToBounds = true
         return imageView
     }()
     
@@ -26,8 +25,13 @@ class MenuTableViewCell: BaseTableViewCell {
         label.textColor = UIColor.white
         label.textAlignment = .left
         label.numberOfLines = 1
-        label.text = "Profile"
         return label
+    }()
+    
+    private let lineView: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor.white
+        return view
     }()
     
     // MARK: - View LifeCycles
@@ -36,6 +40,12 @@ class MenuTableViewCell: BaseTableViewCell {
         super.initialize()
         layoutAvatarImageView()
         layoutTitleNameLabel()
+        layoutLineView()
+    }
+    
+    func configData(image: UIImage?, title: String?) {
+        self.avatarImageView.image = image
+        self.titleNameLabel.text   = title
     }
     
     // MARK: - Setup layouts
@@ -44,18 +54,30 @@ class MenuTableViewCell: BaseTableViewCell {
         addSubview(avatarImageView)
         avatarImageView.snp.makeConstraints { (make) in
             make.centerY.equalToSuperview()
-            make.height.width.equalTo(24)
-            make.left.equalToSuperview().offset(Dimension.shared.normalMargin)
+            make.height.width.equalTo(25)
+            make.left.equalToSuperview()
+                .offset(Dimension.shared.normalMargin)
         }
     }
     
     private func layoutTitleNameLabel() {
         addSubview(titleNameLabel)
         titleNameLabel.snp.makeConstraints { (make) in
-            make.left.equalTo(avatarImageView.snp.right).offset(Dimension.shared.normalMargin)
-            make.right.equalToSuperview().offset(-Dimension.shared.largeMargin)
+            make.left.equalTo(avatarImageView.snp.right)
+                .offset(Dimension.shared.normalMargin)
+            make.right.equalToSuperview()
+                .offset(-Dimension.shared.largeMargin)
             make.centerY.equalToSuperview()
         }
     }
     
+    private func layoutLineView() {
+        addSubview(lineView)
+        lineView.snp.makeConstraints { (make) in
+            make.height.equalTo(1)
+            make.left.equalToSuperview()
+            make.right.equalToSuperview()
+            make.bottom.equalToSuperview()
+        }
+    }
 }

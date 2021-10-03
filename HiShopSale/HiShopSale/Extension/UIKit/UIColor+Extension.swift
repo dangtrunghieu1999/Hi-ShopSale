@@ -39,7 +39,7 @@ extension UIColor {
     }
     
     class var second: UIColor {
-        return UIColor(hex: "#565457")
+        return UIColor(hex: "#276DBD")
     }
     
     class var titleText: UIColor {
@@ -119,7 +119,15 @@ extension UIColor {
     }
     
     class var messageBackground: UIColor {
-        return UIColor(hex: "EFF1F3")
+        return UIColor(hex: "#EFF1F3")
+    }
+    
+    class var blackColor: UIColor {
+        return UIColor(hex: "#78838C")
+    }
+    
+    class var greenColor: UIColor {
+        return UIColor(hex: "#009900")
     }
 }
 

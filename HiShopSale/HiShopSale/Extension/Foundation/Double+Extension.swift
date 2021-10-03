@@ -14,4 +14,10 @@ extension Double {
         formatter.numberStyle = .decimal
         return (formatter.string(from: NSNumber(value: self)) ?? "") + "đ"
     }
+    
+    var currencyFormatVN: String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        return (formatter.string(from: NSNumber(value: self)) ?? "") + "VND"
+    }
 }

@@ -14,8 +14,8 @@ extension UIImage {
     /// Use this method when pick image from library
     func normalizeImage() -> UIImage? {
         let size = self.size
-        let widthRatio  = size.width / 1000
-        let heightRatio = size.height / 1000
+        let widthRatio  = size.width / (1024 * 2)
+        let heightRatio = size.height / (1024 * 2)
         
         guard widthRatio > 1 || heightRatio > 1 else { return self }
         var newSize: CGSize

@@ -24,4 +24,21 @@ extension UIButton {
             imageView.heightAnchor.constraint(equalToConstant: length - 2)
         ])
     }
+    
+    func addRightIconLarge(image: UIImage) {
+        let imageView = UIImageView(image: image)
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+
+        addSubview(imageView)
+
+        let length = CGFloat(28)
+        titleEdgeInsets.right += length
+
+        NSLayoutConstraint.activate([
+            imageView.leadingAnchor.constraint(equalTo: self.titleLabel!.trailingAnchor, constant: 10),
+            imageView.centerYAnchor.constraint(equalTo: self.titleLabel!.centerYAnchor, constant: 0),
+            imageView.widthAnchor.constraint(equalToConstant: length - 2),
+            imageView.heightAnchor.constraint(equalToConstant: length - 2)
+        ])
+    }
 }

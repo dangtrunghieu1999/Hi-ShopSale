@@ -14,11 +14,23 @@ extension UINavigationController {
     func popToViewController<T: BaseViewController>(_ viewcontroller: T.Type) -> Bool {
         for controller in viewControllers as Array {
             if controller.isKind(of: viewcontroller.self) {
-                popToViewController(controller, animated: true)
+                popToViewController(controller, animated: false)
                 return true
             }
         }
         return false
+    }
+    
+    func popToViewControllerType(_ type: UIViewController.Type, completion: (()-> Void)?) {
+        let vc = self.viewControllers.filter {return $0.isKind(of: type)}.first
+        if let vc = vc { self.popToViewControllerWithHandler(vc, completion: completion) }
+    }
+    
+    func popToViewControllerWithHandler(_ viewController: UIViewController, completion: (()-> Void)?) {
+        CATransaction.begin()
+        CATransaction.setCompletionBlock(completion)
+        self.popToViewController(viewController, animated: true)
+        CATransaction.commit()
     }
     
     override open var shouldAutorotate: Bool {
@@ -48,4 +60,17 @@ extension UINavigationController {
         }
     }
     
+    func popViewControllerWithHandler(completion: @escaping ()->()) {
+        CATransaction.begin()
+        CATransaction.setCompletionBlock(completion)
+        self.popViewController(animated: true)
+        CATransaction.commit()
+    }
+    
+    func pushViewController(viewController: UIViewController, completion: @escaping ()->()) {
+        CATransaction.begin()
+        CATransaction.setCompletionBlock(completion)
+        self.pushViewController(viewController, animated: true)
+        CATransaction.commit()
+    }
 }

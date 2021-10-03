@@ -47,10 +47,30 @@ open class BaseViewController: UIViewController {
         let hub = JGProgressHUD(style: .dark)
         return hub
     }()
+
+    lazy var searchBar: PaddingTextField = {
+        let searchBar = PaddingTextField()
+        searchBar.setDefaultBackgroundColor()
+        searchBar.layer.cornerRadius = 5
+        searchBar.layer.masksToBounds = true
+        searchBar.placeholder = TextManager.search.localized()
+        searchBar.font = UIFont.systemFont(ofSize: FontSize.h2.rawValue)
+        searchBar.returnKeyType = .search
+        searchBar.fontPlaceholder(text: TextManager.search.localized(), size: FontSize.h2.rawValue)
+        var rect = navigationController?.navigationBar.frame ?? CGRect.zero
+        rect.size.height = 36
+        searchBar.frame = rect
+        searchBar.clearButtonMode = .whileEditing
+        searchBar.addTarget(self, action: #selector(touchInSearchBar), for: .editingDidBegin)
+        searchBar.addTarget(self, action: #selector(searchBarValueChange(_:)), for: .editingChanged)
+        searchBar.delegate = self
+        return searchBar
+    }()
     
     lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.isUserInteractionEnabled = true
+        scrollView.showsVerticalScrollIndicator = false
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(touchInScrollView))
         tapGesture.cancelsTouchesInView = false
         scrollView.addGestureRecognizer(tapGesture)
@@ -63,17 +83,23 @@ open class BaseViewController: UIViewController {
         return view
     }()
     
+    private (set) lazy var filterButton: BadgeButton = {
+        let button = BadgeButton(type: .custom)
+        button.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+        button.setImage(ImageManager.icon_filter, for: .normal)
+        button.imageView?.contentMode = .scaleAspectFit
+        button.addTarget(self, action: #selector(touchInFilter), for: .touchUpInside)
+        return button
+    }()
+    
     private (set) lazy var tapGestureOnSuperView = UITapGestureRecognizer(target: self,
                                                                           action: #selector(touchInScrollView))
+    private (set) lazy var filterButtonItem = UIBarButtonItem(customView: filterButton)
     
     // MARK: - View LifeCycles
     
     open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        if let navCtrl = navigationController {
-            navCtrl.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-        }
-        setupTabbar()
     }
     
     open override func viewDidLoad() {
@@ -112,6 +138,35 @@ open class BaseViewController: UIViewController {
         view.endEditing(true)
     }
     
+    func addEmptyView(message: String? = nil, image: UIImage? = nil) {
+        if message != nil {
+            emptyView.message = message
+        }
+        if image != nil {
+            emptyView.image = image
+        }
+        
+        view.addSubview(emptyView)
+        emptyView.snp.makeConstraints { (make) in
+            make.width.height.equalTo(300)
+            make.center.equalToSuperview()
+        }
+    }
+    
+    @objc func touchInFilter() {}
+    
+    func registerKeyboardNotification() {
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(keyboardWillShow(_:)),
+                                               name: UIResponder.keyboardWillShowNotification,
+                                               object: nil)
+        
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(keyboardWillHide(_:)),
+                                               name: UIResponder.keyboardWillHideNotification,
+                                               object: nil)
+    }
+    
     @objc func touchInCartButton() {
         
     }
@@ -131,12 +186,9 @@ open class BaseViewController: UIViewController {
     }
     
     // MARK: - Helper Method
-    
-    
-    
+
     func setupUIComponents() {
         self.view.setDefaultBackgroundColor()
-        self.setupTabbar()
         self.addBackButtonIfNeeded()
     }
     
@@ -144,14 +196,6 @@ open class BaseViewController: UIViewController {
         tapGestureOnSuperView.cancelsTouchesInView = false
         view.isUserInteractionEnabled = true
         view.addGestureRecognizer(tapGestureOnSuperView)
-    }
-    
-    private func setupTabbar() {
-        if navigationController?.viewControllers.count ?? 0 > 1 {
-            tabBarController?.tabBar.isHidden = true
-        } else {
-            tabBarController?.tabBar.isHidden = false
-        }
     }
 
     func addBackButtonIfNeeded() {
@@ -167,12 +211,12 @@ open class BaseViewController: UIViewController {
         let customButton = UIButton(type: .custom)
         customButton.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
         if itemModel.image != nil {
-            let image = itemModel.image?.withRenderingMode(.alwaysTemplate)
+            let image = itemModel.image?.withRenderingMode(.alwaysOriginal)
             customButton.setImage(image, for: .normal)
-            customButton.tintColor = UIColor.white
+            customButton.tintColor = UIColor.black
         } else if itemModel.title != nil {
             customButton.setTitle(itemModel.title!, for: .normal)
-            customButton.setTitleColor(UIColor.white, for: .normal)
+            customButton.setTitleColor(UIColor.black, for: .normal)
         }
         
         customButton.addTarget(target.target, action: target.selector, for: .touchUpInside)
@@ -189,6 +233,22 @@ open class BaseViewController: UIViewController {
         } else {
             navigationItem.leftBarButtonItems = barButtonItems
         }
+    }
+    
+    func setDefaultNavigationBar(leftBarImage: UIImage? = nil, rightBarItem: UIImage? = nil) {
+        if leftBarImage != nil {
+            let leftBarItemTarget: Target = (target: self, selector: #selector(touchUpInLeftBarButtonItem))
+            let leftBarButtonModel = BarButtonItemModel(leftBarImage, leftBarItemTarget)
+            addBarItems(with: [leftBarButtonModel], type: .left)
+        }
+        
+        if rightBarItem != nil {
+            let rightBarItemTarget: Target = (target: self, selector: #selector(touchUpInRightBarButtonItem))
+            let rightBarButtonModel = BarButtonItemModel(rightBarItem, rightBarItemTarget)
+            addBarItems(with: [rightBarButtonModel], type: .right)
+        }
+        
+        navigationItem.titleView = searchBar
     }
     
     func setRightNavigationBar(_ image: UIImage? = nil) {
@@ -216,13 +276,31 @@ open class BaseViewController: UIViewController {
             } else {
                 make.top.equalTo(topLayoutGuide.snp.bottom)
             }
-            make.left.right.bottom.equalToSuperview()
+            make.left.right.equalToSuperview()
+            make.bottom.equalTo(bottomLayoutGuide.snp.top)
+                .offset(-Dimension.shared.normalMargin)
         }
     }
     
 }
 
-// MARK: - UIGestureRecognizerDelegate
+// MARK: - UITextFieldDelegate
+
+extension BaseViewController: UITextFieldDelegate {
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        searchBar.endEditing(true)
+        searchBar.resignFirstResponder()
+        return true
+    }
+    
+    public func textFieldDidBeginEditing(_ textField: UITextField) {
+        textField.addBottomBorder(UIColor.thirdColor)
+    }
+    
+    public func textFieldDidEndEditing(_ textField: UITextField) {
+        textField.addBottomBorder(UIColor.separator)
+    }
+}
 
 extension BaseViewController: UIGestureRecognizerDelegate {
     public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer,

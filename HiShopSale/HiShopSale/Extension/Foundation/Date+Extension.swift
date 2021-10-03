@@ -29,4 +29,16 @@ extension Date {
         dateFormatter.locale    = Locale(identifier: "vi_VN")
         return dateFormatter.string(from: self)
     }
+    
+    var serverMonthFormat: String {
+        let dateFormater = DateFormatter()
+        dateFormater.dateFormat = "MM-yyyy"
+        return dateFormater.string(from: self)
+    }
+    
+    var serverYearFormat: String {
+        let dateFormater = DateFormatter()
+        dateFormater.dateFormat = "yyyy"
+        return dateFormater.string(from: self)
+    }
 }

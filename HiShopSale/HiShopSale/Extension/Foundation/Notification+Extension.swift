@@ -12,6 +12,7 @@ import UIKit
 extension Notification.Name {
     static var reloadCartBadgeNumber                    = Notification.Name("reloadCartBadgeNumber")
     static var updateFostFeedInputStatusCellSize        = Notification.Name("updateFostFeedInputStatusCellSize")
+    static var reloadNotifications                      = Notification.Name("reloadNotifications")
 }
 
 struct KeyboardAnimationInfo {

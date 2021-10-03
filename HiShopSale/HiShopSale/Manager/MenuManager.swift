@@ -8,6 +8,15 @@
 import UIKit
 
 extension TextManager {
-    static let menuShop                               = "Menu Shop"
+    static let menuShop                               = "Trang chủ Shop"
+    static let order                                  = "Đơn hàng"
+    static let store                                  = "Thông tin cửa hàng"
+    static let plus                                   = "Thêm sản phẩm mới"
+    static let editProduct                            = "Chỉnh sửa sản phẩm"
+    static let product                                = "Sản phẩm của Shop"
+    static let statistics                             = "Thống kê"
+    static let home                                   = "Trang chủ"
+    static let logout                                 = "Đăng xuất"
 }
+
 
